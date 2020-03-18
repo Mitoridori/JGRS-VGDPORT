@@ -1,0 +1,1221 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFu0pNbg/fpqwU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFu0pNbg/fqC5w=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pNbg/fpqwU="
+									},
+									"model": {
+										"$ref": "AAAAAAFu0pNbg/fnc1I="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFu0pNbg/frGOk=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbg/fqC5w="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -720,
+											"top": -816,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFu0pNbhPfsSdg=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbg/fqC5w="
+											},
+											"font": "Arial;13;1",
+											"left": 37,
+											"top": 23,
+											"width": 127,
+											"height": 13,
+											"text": "QuestGoal"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFu0pNbhPftk90=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbg/fqC5w="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -720,
+											"top": -816,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFu0pNbhPfujyk=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbg/fqC5w="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -720,
+											"top": -816,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 32,
+									"top": 16,
+									"width": 137,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFu0pNbg/frGOk="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFu0pNbhPfsSdg="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFu0pNbhPftk90="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFu0pNbhPfujyk="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFu0pNbhPfvqn8=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pNbg/fpqwU="
+									},
+									"model": {
+										"$ref": "AAAAAAFu0pNbg/fnc1I="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pOrKvgVGNs=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pOrBPgS1/4="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 46,
+											"width": 127,
+											"height": 13,
+											"text": "+Description",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pPepvgc7bk=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pPefPgZm4E="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 61,
+											"width": 127,
+											"height": 13,
+											"text": "+completed",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pPvu/gjKPQ=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pPvlPggq54="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 76,
+											"width": 127,
+											"height": 13,
+											"text": "+CurrentAmount",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pQCXvgqwCE=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pQCNvgntvs="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 91,
+											"width": 127,
+											"height": 13,
+											"text": "+RequiredAmoint",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pQWufgxNSw=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pQWkvguC5M="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 106,
+											"width": 127,
+											"height": 13,
+											"text": "+CoinReward",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFu0pULIfg46DE=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfvqn8="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pUK+Pg1crs="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 121,
+											"width": 127,
+											"height": 13,
+											"text": "+ExperenceReward",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 32,
+									"top": 41,
+									"width": 137,
+									"height": 98
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFu0pNbhPfwXzE=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pNbg/fpqwU="
+									},
+									"model": {
+										"$ref": "AAAAAAFu0pNbg/fnc1I="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFu0pVtkPhIJJM=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfwXzE="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pVta/hFFeU="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 144,
+											"width": 127,
+											"height": 13,
+											"text": "+Init()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFu0pWsSfhP2NY=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfwXzE="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pWsIvhM2OI="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 159,
+											"width": 127,
+											"height": 13,
+											"text": "+Evaluate()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFu0pXQWPhW1FY=",
+											"_parent": {
+												"$ref": "AAAAAAFu0pNbhPfwXzE="
+											},
+											"model": {
+												"$ref": "AAAAAAFu0pXQMPhTMVk="
+											},
+											"font": "Arial;13;0",
+											"left": 37,
+											"top": 174,
+											"width": 127,
+											"height": 13,
+											"text": "+Complete()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 32,
+									"top": 139,
+									"width": 137,
+									"height": 53
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFu0pNbhPfxRh8=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pNbg/fpqwU="
+									},
+									"model": {
+										"$ref": "AAAAAAFu0pNbg/fnc1I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -360,
+									"top": -408,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFu0pNbhPfyOFI=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pNbg/fpqwU="
+									},
+									"model": {
+										"$ref": "AAAAAAFu0pNbg/fnc1I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -360,
+									"top": -408,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 32,
+							"top": 16,
+							"width": 137,
+							"height": 185,
+							"nameCompartment": {
+								"$ref": "AAAAAAFu0pNbg/fqC5w="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFu0pNbhPfvqn8="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFu0pNbhPfwXzE="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFu0pNbhPfxRh8="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFu0pNbhPfyOFI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0okfafahXSE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "IQuestID",
+					"ownedElements": [
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFu0rhTW/sk2sA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pC8N/eZ3oE="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0oxU5vbYelY=",
+							"_parent": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"name": "ID",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0ozF7fbgfjo=",
+							"_parent": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"name": "Experence",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0ozrwvbnBMc=",
+							"_parent": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"name": "Coins",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0o0SqfbugI4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0okfafahXSE="
+							},
+							"name": "Done"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0o158Pb1+dw=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Quest",
+					"ownedElements": [
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFu0sDIJPvTtmc=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0rdeJfrfpic="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o3LGPchXOc=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "ListofGoals",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o4stfcohd4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "QuestName",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o5C4fcv3mA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "Descriptions",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o5Vm/c2csQ=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "NPCID",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o5sBvc9NXU=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "ExperenceReward",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o6Hd/dE100=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "Completed",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o6dRfdLRq8=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "RequiredAmount",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o7f5PdSP7I=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "CurrentAmount",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o8asvdZzvc=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "CoinReward",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0o9IGvdgUrg=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "Attribute1",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0o+Suvdmdw4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "StartText"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0o+uFPdt8C4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "TrackingQuest"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0o/GyPd0Kvk=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "InProgressQuestText"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0o/uufd7NXA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "CompleteText"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pAVAfeCuFg=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "CheckGoals"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pBMRveJJCA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							},
+							"name": "GiveReward"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0pC8N/eZ3oE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestEvents",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pEFrvfFGt8=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pC8N/eZ3oE="
+							},
+							"name": "ItemEventHandler",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pJhOPfWaJg=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pC8N/eZ3oE="
+							},
+							"name": "ItemEventHandler",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0pKvU/fd6G8=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pJhOPfWaJg="
+									},
+									"name": "IQuestID item",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pLG7fffDu4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pC8N/eZ3oE="
+							},
+							"name": "ItemFinished"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0pNbg/fnc1I=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestGoal",
+					"ownedElements": [
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFu0rNWZPrMAhk=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pOrBPgS1/4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "Description",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pPefPgZm4E=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "completed",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pPvlPggq54=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "CurrentAmount",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pQCNvgntvs=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "RequiredAmoint",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pQWkvguC5M=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "CoinReward",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pUK+Pg1crs=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "ExperenceReward",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pVta/hFFeU=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "Init"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pWsIvhM2OI=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "Evaluate"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pXQMPhTMVk=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							},
+							"name": "Complete"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0pZUc/hb2XU=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "KillQuest",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0pb8OviGNX4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pZUc/hb2XU="
+							},
+							"name": "EnemyID",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pc5XPiN7RA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pZUc/hb2XU="
+							},
+							"name": "KillQuest",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0peJ/PiU7mE=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pc5XPiN7RA="
+									},
+									"name": "String of requirments",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0peKWviWNJQ=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pZUc/hb2XU="
+							},
+							"name": "Init"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0peiP/idWLI=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pZUc/hb2XU="
+							},
+							"name": "EnemyDied"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0pmmEviru8w=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "KillQuest",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFu0pmmffjUo0I=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0poU2fjpi+g=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"name": "EnemyID",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0ppJRPjwGpM=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"name": "KillQuest",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0pqNBPj3Zso=",
+									"_parent": {
+										"$ref": "AAAAAAFu0ppJRPjwGpM="
+									},
+									"name": "string of requirments",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pqNdfj5eFk=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"name": "Init"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0pq0+vkAmdA=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							},
+							"name": "EnemyDead",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0qI+0vmDzgs=",
+									"_parent": {
+										"$ref": "AAAAAAFu0pq0+vkAmdA="
+									},
+									"name": "iQuestID items",
+									"type": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0pt6QvkkvBE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Collecting Quest",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFu0pt6s/lN5FI=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0qE8tPliuXQ=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"name": "ItemID",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qFhQ/lpn/o=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"name": "CollectingQuest",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0qGWDPlwce0=",
+									"_parent": {
+										"$ref": "AAAAAAFu0qFhQ/lpn/o="
+									},
+									"name": "string of requirments",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qGjSPlysw0=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"name": "Init"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qHF9Pl5oy8=",
+							"_parent": {
+								"$ref": "AAAAAAFu0pt6QvkkvBE="
+							},
+							"name": "ItemCollected",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0qIMMfmAoo0=",
+									"_parent": {
+										"$ref": "AAAAAAFu0qHF9Pl5oy8="
+									},
+									"name": "iQuestID items",
+									"type": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0qMkTPmGYBs=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestType",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFu0qMkuvmvXFM=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pNbg/fnc1I="
+							}
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFu0qPwovnCiE4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"name": "ItemID",
+							"type": ""
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qQ4j/nSBiM=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"name": "Constructer",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0qVC7/nZ9QQ=",
+									"_parent": {
+										"$ref": "AAAAAAFu0qQ4j/nSBiM="
+									},
+									"name": "string of requirments",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qVePvnbGFY=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"name": "Init"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qWAx/niF+k=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qMkTPmGYBs="
+							},
+							"name": "EndFunction"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0qhSc/nw/Y4=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestName",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFu0qhS//oZ24g=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qhSc/nw/Y4="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0qhSc/nw/Y4="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pmmEviru8w="
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qlv/foubxo=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qhSc/nw/Y4="
+							},
+							"name": "Awake",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0qmsDfo1dDo=",
+									"_parent": {
+										"$ref": "AAAAAAFu0qlv/foubxo="
+									},
+									"name": "define quest details",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qm50vo3pBs=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qhSc/nw/Y4="
+							},
+							"name": "Operation1"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0qqRnvpfKeI=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestName",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAFu0qqSG/qIO/E=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0o158Pb1+dw="
+							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0qr5NvqcF58=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"name": "Awake",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFu0q7a8/qj+m4=",
+									"_parent": {
+										"$ref": "AAAAAAFu0qr5NvqcF58="
+									},
+									"name": "Define quest Goal type",
+									"type": ""
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0q7v6fql5b4=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"name": "StartText"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0q8MuPqsqCo=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"name": "TrackingQuest"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0q84VvqzpS0=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"name": "InProgressQuestText"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFu0q9lIfq6pcE=",
+							"_parent": {
+								"$ref": "AAAAAAFu0qqRnvpfKeI="
+							},
+							"name": "CompleteText"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFu0rdeJfrfpic=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "QuestItems",
+					"ownedElements": [
+						{
+							"_type": "UMLDependency",
+							"_id": "AAAAAAFu0rzHnPs7/Vg=",
+							"_parent": {
+								"$ref": "AAAAAAFu0rdeJfrfpic="
+							},
+							"source": {
+								"$ref": "AAAAAAFu0rdeJfrfpic="
+							},
+							"target": {
+								"$ref": "AAAAAAFu0pC8N/eZ3oE="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFu0r/cm/tfPds=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Quest NPC or object",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAFu0sB/rfuKxzM=",
+							"_parent": {
+								"$ref": "AAAAAAFu0r/cm/tfPds="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFu0sB/rfuL3PI=",
+								"_parent": {
+									"$ref": "AAAAAAFu0sB/rfuKxzM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFu0r/cm/tfPds="
+								},
+								"navigable": false
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAFu0sB/rvuMH4I=",
+								"_parent": {
+									"$ref": "AAAAAAFu0sB/rfuKxzM="
+								},
+								"reference": {
+									"$ref": "AAAAAAFu0o158Pb1+dw="
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
