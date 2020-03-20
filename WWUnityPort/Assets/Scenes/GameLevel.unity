@@ -342,8 +342,8 @@ MonoBehaviour:
   offsetFromWall: 0.1
   maxDistance: 20
   minDistance: 0.6
-  xSpeed: 200
-  ySpeed: 200.9
+  xSpeed: 0
+  ySpeed: 0
   yMinLimit: -80
   yMaxLimit: 80
   zoomSpeed: 40

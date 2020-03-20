@@ -11,8 +11,8 @@ public class CharacterCamera : MonoBehaviour
     public float offsetFromWall = 0.1f;
     public float maxDistance = 20f;
     public float minDistance = 0.6f;
-    public float xSpeed = 200.0f;
-    public float ySpeed = 200.9f;
+    public float xSpeed;
+    public float ySpeed;
     public float yMinLimit = -80f;
     public float yMaxLimit = 80.0f;
     public float zoomSpeed = 40f;
@@ -36,6 +36,8 @@ public class CharacterCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        xSpeed = target.GetComponent<BaseCharacter>().GetTurnRate();
+        ySpeed = target.GetComponent<BaseCharacter>().GetLookUpRate();
         Vector3 angles = transform.eulerAngles;
         xDeg = angles.x;
         yDeg = angles.y;
