@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BaseCharacter : MonoBehaviour
 {
-    private float baseTurnRate = 45.0f;
-    private float baseLookUpRate = 45.0f;
+    private float baseTurnRate = 75.0f;
+    private float baseLookUpRate = 75.0f;
 
     public float jumpSpeed;
     public float walkSpeed;
