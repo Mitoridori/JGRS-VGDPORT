@@ -2,25 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCollectible : MonoBehaviour
+public class BaseCollectible : MonoBehaviour, IQuestID
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string ItemID;
+    public int ResetTime;
 
-    // Update is called once per frame
-    void Update()
+    public string ID { get; set; }
+
+    PlayerController PC;
+
+    private void Awake()
     {
-        
+        ID = ItemID;
+
+    }
+    public void OnInteract()
+    {
+        gameObject.SetActive(false);
+        Cleared();
+
+        Invoke("reset", ResetTime);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Player>())
+        PC = other.GetComponent<PlayerController>();
+
+        if (other.gameObject.tag == "Player")
         {
-            Destroy(this);
+            gameObject.SetActive(false);
+            Cleared();
         }
+        this.Invoke("reset", ResetTime);
+
     }
+
+    void reset()
+    {
+        gameObject.SetActive(true);
+    }
+    public void Cleared()
+    {
+        QuestEvents.ItemCleared(this);
+    }
+
 }
+
