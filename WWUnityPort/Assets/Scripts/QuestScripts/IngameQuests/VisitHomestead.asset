@@ -9,24 +9,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adbd7c2b5f87c19409f654ed3f253515, type: 3}
-  m_Name: CollectWood
+  m_Script: {fileID: 11500000, guid: e8088b738c445ab4a904c9f584cd4793, type: 3}
+  m_Name: VisitHomestead
   m_EditorClassIdentifier: 
-  QuestName: CollectWood
+  QuestName: VisitHomestead
   Prereq1: NULL
   Prereq2: NULL
-  Description: Collect 5 peices of wood
-  NPCID: wood
-  TurnInNPCName: Doozy
-  RequiredAmount: 5
+  Description: Take NPC to the homestead
+  NPCID: 
+  TurnInNPCName: 
+  RequiredAmount: 1
   ExperenceReward: 10
   CoinReward: 10
-  QuestObjectives: Collect 5 peices of wood.
-  StartQuestText: Now it is time for a fire, I need you to collect 5 logs of wood.
+  QuestObjectives: 
+  StartQuestText: Now can you please take me to the old homestead? I'd love to see
+    it again.
   TrackingQuestText: 
   InprogressQuestText: 
-  CompletedQuestText: Wonderful! bring the wood back to me, so we can build a fire.
+  CompletedQuestText: Thank you so much, It was a beautiful sight to see.
   SecondInprogressText: 
   SecondCompletedText: 
   RewardsList: 
-  CNPC: []

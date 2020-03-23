@@ -61,7 +61,6 @@ public class Quests : ScriptableObject
     {
         string coin;
         string exp;
-        string ability;
         if (CoinReward > 0)
         {
             coin = "Coin: " + CoinReward;
