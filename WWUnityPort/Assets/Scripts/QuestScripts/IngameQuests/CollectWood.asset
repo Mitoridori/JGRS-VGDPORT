@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adbd7c2b5f87c19409f654ed3f253515, type: 3}
-  m_Name: New Quest
+  m_Name: CollectWood
   m_EditorClassIdentifier: 
   QuestName: 
   Prereq1: 
@@ -21,7 +21,6 @@ MonoBehaviour:
   RequiredAmount: 0
   ExperenceReward: 0
   CoinReward: 0
-  AbilityReward: 0
   QuestObjectives: 
   StartQuestText: 
   TrackingQuestText: 
