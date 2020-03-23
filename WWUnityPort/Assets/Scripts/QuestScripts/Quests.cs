@@ -38,7 +38,6 @@ public class Quests : ScriptableObject
     public int RequiredAmount;
     public int ExperenceReward = 0;
     public int CoinReward = 0;
-    public int AbilityReward = 0;
     //public variable for item reward needed;
 
     //Descriptions of text
@@ -75,14 +74,7 @@ public class Quests : ScriptableObject
         }
         else
             exp = "";
-        if (AbilityReward > 0)
-        {
-            ability = "Player Stat Point: " + AbilityReward;
-        }
-        else
-            ability = "";
-
-        return RewardsList = coin + " " + exp + " " + ability;
+        return RewardsList = coin + " " + exp + " ";
     }
 
     public virtual void Load() { }
