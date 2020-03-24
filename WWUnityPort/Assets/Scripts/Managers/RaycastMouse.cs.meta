@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 42e271fc4ef4eec489a3a0573b46b445
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - iconArrow: {fileID: 2800000, guid: 8ea795c067613354898068091ffc7130, type: 3}
+  - iconAttack: {fileID: 2800000, guid: 2d18e23e3ce249b4489b8bcdd02d3f48, type: 3}
+  - iconTalk: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
+  - iconInteract: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
+  - iconQuestionMark: {fileID: 2800000, guid: fe2443101ded6f544b32f8dc8690c367, type: 3}
+  - iconExclamation: {fileID: 2800000, guid: cecad95c851b97f40b105b30b0bfede3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
