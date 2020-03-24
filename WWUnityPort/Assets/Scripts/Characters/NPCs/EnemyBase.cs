@@ -14,7 +14,7 @@ public class EnemyBase : BaseCharacter
 
         executor = GetComponent<BehaviorExecutor>();
 
-        executor.SetBehaviorParam("animationClip", animator);
+        //executor.SetBehaviorParam("animationClip", animator);
 
     }
 }
