@@ -13,5 +13,8 @@ public class EnemyBase : BaseCharacter
         animator = GetComponent<Animator>();
 
         executor = GetComponent<BehaviorExecutor>();
+
+        executor.SetBehaviorParam("animationClip", animator);
+
     }
 }
