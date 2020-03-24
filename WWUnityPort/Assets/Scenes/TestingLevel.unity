@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 28d405734260c94439a523085e979b26, type: 2}
 --- !u!1 &102333536
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 9abbaa4495ba9dc49a1ae23d1ca35779, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 9abbaa4495ba9dc49a1ae23d1ca35779, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -577,6 +577,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.733322, y: 2.7777004, z: 10.436689}
   m_Center: {x: 0.6224427, y: -0.8888502, z: 0.6053152}
+--- !u!114 &1116510787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116510785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f916a1bf0b67fcb41b1756f54ab20e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemID: HomeStead
 --- !u!1 &1460753058
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2b0c2618ef57a6447a3ecf7ba6b2f331, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2b0c2618ef57a6447a3ecf7ba6b2f331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -879,7 +892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3cb249f860d2ad44a9af91c74050983c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3cb249f860d2ad44a9af91c74050983c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

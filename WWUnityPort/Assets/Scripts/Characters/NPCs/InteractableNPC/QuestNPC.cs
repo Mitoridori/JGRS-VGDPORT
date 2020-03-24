@@ -12,9 +12,11 @@ public class QuestNPC : InterNPC
     public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
     private int i = 0; //quest counter
 
+    
     void Awake()
     {
         QM = FindObjectOfType<QuestManager>();
+        CanMove = false;
     }
 
     //Function: OnInteract

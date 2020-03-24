@@ -16,7 +16,7 @@ MonoBehaviour:
   Prereq1: NULL
   Prereq2: NULL
   Description: Take NPC to the homestead
-  NPCID: 
+  NPCID: HomeStead
   TurnInNPCName: 
   RequiredAmount: 1
   ExperenceReward: 10
@@ -30,3 +30,4 @@ MonoBehaviour:
   SecondInprogressText: 
   SecondCompletedText: 
   RewardsList: 
+  CNPC: []
