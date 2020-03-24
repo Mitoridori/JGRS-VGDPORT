@@ -7,6 +7,7 @@ public class InterNPC : BaseCharacter
 
     private BehaviorExecutor executor;
     private Animator animator;
+    protected string currentText;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,4 +15,16 @@ public class InterNPC : BaseCharacter
 
         executor = GetComponent<BehaviorExecutor>();
     }
+
+    public virtual void OnInteract()
+    {
+        Debug.Log("NPC interacted");
+    }
+
+    public virtual string GetCurrentText()
+    {
+        return currentText;
+    }
+
+
 }

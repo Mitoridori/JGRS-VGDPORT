@@ -13,9 +13,9 @@ public class QuestManager : MonoBehaviour
     private bool checklist;
 
     public List<Quests> ActiveQuest = new List<Quests>();
-    public List<GameObject> QuestNPC = new List<GameObject>();
+    //public List<GameObject> QuestNPC = new List<GameObject>();
 
-    private List<GameObject> NPC = new List<GameObject>();
+    //private List<GameObject> NPC = new List<GameObject>();
 
 
 

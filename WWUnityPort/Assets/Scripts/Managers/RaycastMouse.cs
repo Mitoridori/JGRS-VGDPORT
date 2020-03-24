@@ -54,7 +54,7 @@ public class RaycastMouse : MonoBehaviour
                     mouseReg = talkRegPoint;
                     break;
 
-                case "QuestGiver":
+                case "QuestNPC":
                     mouseTex = iconQuestionMark;
                     mouseReg = QuestionRegPoint;
                     break;

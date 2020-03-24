@@ -101,5 +101,34 @@ public class PlayerController : BaseController
 
         if (jumping)
             moveStatus = "jump";
+
+        MouseInteract();
+    }
+
+
+    void MouseInteract()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                switch (hit.collider.tag)
+                {
+                    case "QuestNPC":
+                        hit.collider.gameObject.GetComponent<InterNPC>().OnInteract();
+                        break;
+                    case "NPCTalk":
+
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+
+        }
     }
 }
