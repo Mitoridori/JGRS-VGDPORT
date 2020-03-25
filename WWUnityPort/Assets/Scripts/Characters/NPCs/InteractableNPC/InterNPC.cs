@@ -8,9 +8,9 @@ public class InterNPC : BaseCharacter
     private BehaviorExecutor executor;
     private Animator animator;
     protected string currentText;
-    //private NavMeshAgent agent;
+    private UnityEngine.AI.NavMeshAgent agent;
 
-    Player player;
+    PlayerController player;
     public bool CanMove { get; set; }
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,15 @@ public class InterNPC : BaseCharacter
 
         executor = GetComponent<BehaviorExecutor>();
 
-        player = GetComponent<Player>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
+        player = FindObjectOfType<PlayerController>();
+         
+    }
+
+    private void Update()
+    {
+        Follow();
     }
 
     public virtual void OnInteract()
@@ -38,7 +46,7 @@ public class InterNPC : BaseCharacter
         {
             if ((player.transform.position - transform.position).magnitude <= 5)
             {
-                //agent.SetDestination(player.transform.position + new Vector3(0, 0, 1));
+                agent.SetDestination(player.transform.position + new Vector3(0, 0, 1));
             }
         }
     }
