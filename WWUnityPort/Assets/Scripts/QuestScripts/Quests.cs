@@ -13,7 +13,7 @@ using System.Linq;
 public class Quests : ScriptableObject
 {
     //Items not to be touched. 
-    //public HDialogueInterface QUIM;
+    public QuestLogUIManager QUIM;
     //public Player player;
 
     public List<QuestGoal> Goals = new List<QuestGoal>();
@@ -60,42 +60,70 @@ public class Quests : ScriptableObject
     public virtual string Reward()
     {
         string coin;
-        string exp;
+        //string exp;
         if (CoinReward > 0)
         {
-            coin = "Coin: " + CoinReward;
+            coin = " " + CoinReward;
         }
         else
             coin = "";
-        if (ExperenceReward > 0)
-        {
-            exp = "Experence: " + ExperenceReward;
-        }
-        else
-            exp = "";
-        return RewardsList = coin + " " + exp + " ";
+        //if (ExperenceReward > 0)
+        //{
+        //    exp = "Experence: " + ExperenceReward;
+        //}
+        //else
+        //    exp = "";
+        return RewardsList = coin;
     }
 
     public virtual void Load() { }
 
     //FUNCTION : Anything Text
     //DESCRIPTION : Allowing the quests to pass text into the UI
-    //PARAMETERS : 
-    //RETURNS : 
-    public virtual void TrackingQuest() { }
-    public virtual void StartText() { }
-    public virtual void InprogressText() { }
-    public virtual void CompletedText() { }
-
-    public virtual string TrackText()
+    public virtual void StartText()
     {
-        string TrackingText;
-        if (Completed == false)
-            TrackingText = TrackingQuestText;
-        else
-            TrackingText = "Completed";
-
-        return TrackingText;
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.NPCBoxTwo.text = StartQuestText;
+        }
+        Debug.Log("StartText " + QuestName);
+    }
+    public virtual void TrackingQuest()
+    {
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.TextDetails.text = TrackingQuestText;
+            QUIM.CoinText.text = Reward();
+            if (Completed)
+            {
+                QUIM.TextTally.text = "Completed";
+            }
+            else
+            {
+                QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
+            }
+        }
+        Debug.Log("Tracking Quest" + QuestName);
+    }
+    public virtual void InprogressText()
+    {
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.NPCBoxTwo.text = InprogressQuestText;
+        }
+        Debug.Log("In Progress " + QuestName);
+    }
+    public virtual void CompletedText()
+    {
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.NPCBoxTwo.text = CompletedQuestText;
+        }
+        Debug.Log("Completed Text" + QuestName);
     }
 
     void OnEnable()
@@ -107,8 +135,6 @@ public class Quests : ScriptableObject
 
     //FUNCTION : GiveReward
     //DESCRIPTION : gives the player the reward for the quest
-    //PARAMETERS : 
-    //RETURNS : 
     public virtual void GiveReward()
     {
         //player = FindObjectOfType<Player>();

@@ -7,6 +7,7 @@ using UnityEngine;
 public class EscortQuests : Quests
 {
     public List<string> CNPC = new List<string>();
+
     public override void Load()
     {
 
@@ -26,49 +27,4 @@ public class EscortQuests : Quests
         }
     }
 
-
-    public override void StartText()
-    {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //if (QUIM)
-        //{
-        //    QUIM.NPCBoxTwo.text = StartQuestText;
-        //}
-        Debug.Log("StartText " + QuestName);
-    }
-    public override void TrackingQuest()
-    {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //if (QUIM)
-        //{
-        //    QUIM.TextDetails.text = TrackingQuestText;
-        //    if (Completed)
-        //    {
-        //        QUIM.TextTally.text = "Completed";
-        //    }
-        //    else
-        //    {
-        //        QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
-        //    }
-        //}
-        //Debug.Log("Tracking Quest" + QuestName);
-    }
-    public override void InprogressText()
-    {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //if (QUIM)
-        //{
-        //    QUIM.NPCBoxTwo.text = InprogressQuestText;
-        //}
-        Debug.Log("In Progress " + QuestName);
-    }
-    public override void CompletedText()
-    {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //if (QUIM)
-        //{
-        //    QUIM.NPCBoxTwo.text = CompletedQuestText;
-        //}
-        Debug.Log("Completed Text" + QuestName);
-    }
 }

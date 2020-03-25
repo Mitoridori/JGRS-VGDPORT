@@ -8,6 +8,9 @@ public class QuestLogUIManager : MonoBehaviour
     // Start is called before the first frame update
     public TextMeshProUGUI TextDetails;
     public TextMeshProUGUI TextTally;
+    public TextMeshProUGUI CoinText;
+
+
     public TextMeshProUGUI NPCBoxOne;
     public TextMeshProUGUI NPCBoxTwo;
     public GameObject ToggleButtonA;

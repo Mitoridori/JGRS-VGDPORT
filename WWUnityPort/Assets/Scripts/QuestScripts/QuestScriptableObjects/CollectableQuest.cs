@@ -25,23 +25,5 @@ public class CollectableQuest : Quests
         }
 
     }
-
-
-    public override void StartText()
-    {
-        Debug.Log("StartText " + QuestName);
-    }
-    public override void TrackingQuest()
-    {
-        //Debug.Log("Tracking Quest" + QuestName);
-    }
-    public override void InprogressText()
-    {
-        Debug.Log("In Progress " + QuestName);
-    }
-    public override void CompletedText()
-    {
-        Debug.Log("Completed Text " + QuestName);
-    }
 }
 
