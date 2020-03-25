@@ -860,7 +860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1846497571207541954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1507,6 +1507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDetails: {fileID: 493182285432795951}
   TextTally: {fileID: 8663366112195479782}
+  CoinText: {fileID: 6559411964876060146}
   NPCBoxOne: {fileID: 8380518229135972165}
   NPCBoxTwo: {fileID: 2074386848874748783}
   ToggleButtonA: {fileID: 4554845975560282434}
