@@ -22,10 +22,12 @@ public class BaseController : MonoBehaviour
     protected bool mouseSlideButton = false;
 
     protected CharacterController controller;
+    protected Animator animController;
     // Start is called before the first frame update
     void Start()
     {
         chara = GetComponent<BaseCharacter>();
         controller = GetComponent<CharacterController>();
+        animController = GetComponent<Animator>();
     } 
 }

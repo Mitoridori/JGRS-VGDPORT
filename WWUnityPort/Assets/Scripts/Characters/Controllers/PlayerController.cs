@@ -66,21 +66,21 @@ public class PlayerController : BaseController
             if (moveDirection.z > 0)
             {
                 moveStatus = isWalking ? "walking" : "running";
-                //animController.SetFloat("Speed", moveDirection.z);
+                animController.SetFloat("Speed", moveDirection.z);
             }
 
             if (moveDirection.x < 0)
             {
                 moveStatus = isWalking ? "walkingRight" : "runningRight";
-                //animController.SetFloat("Speed", -moveDirection.x);
+                animController.SetFloat("Speed", -moveDirection.x);
             }
             if (moveDirection.x > 0)
             {
                 moveStatus = isWalking ? "walkingLeft" : "runningLeft";
-                //animController.SetFloat("Speed", moveDirection.x);
+                animController.SetFloat("Speed", moveDirection.x);
             }
 
-            //animController.SetFloat("Direction", moveDirection.x);
+            animController.SetFloat("Direction", moveDirection.x);
 
             moveDirection = transform.TransformDirection(moveDirection);
         }
@@ -103,7 +103,25 @@ public class PlayerController : BaseController
             moveStatus = "jump";
 
         MouseInteract();
+        ResetAnims();
+        if (moveDirection.z == 0)
+        {
+            animController.SetFloat("Speed", moveDirection.z);
+        }
     }
+
+    private void ResetAnims()
+    {
+        if (grounded && (animController.GetCurrentAnimatorStateInfo(0).IsName("Jumping") && animController.GetCurrentAnimatorStateInfo(0).normalizedTime > 1))
+        {
+            animController.SetBool("Jumping", false);
+        }
+        if (isWalking)
+        {
+            animController.SetBool("Running", false);
+        }
+    }
+
 
 
     void MouseInteract()
