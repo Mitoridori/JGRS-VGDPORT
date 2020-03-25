@@ -1711,6 +1711,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2644887683404235502}
     m_Modifications:
+    - target: {fileID: 1164906754695319285, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1257662958427594088, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1766,10 +1771,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 2.9837046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -58.48324
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892602744628681563, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892602744628681563, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -31
+      objectReference: {fileID: 0}
     - target: {fileID: 7450952254027735608, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
         type: 3}
       propertyPath: m_Name
       value: PlayerMoneyBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698298999454866453, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698298999454866453, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0ebeaa4e3a34444b9c95a31aa8972ac, type: 3}
