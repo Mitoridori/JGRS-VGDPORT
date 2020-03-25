@@ -85,6 +85,7 @@ public class Quests : ScriptableObject
         QUIM = FindObjectOfType<QuestLogUIManager>();
         if (QUIM)
         {
+            QUIM.NPCBoxOne.text = TurnInNPCName;
             QUIM.NPCBoxTwo.text = StartQuestText;
         }
         Debug.Log("StartText " + QuestName);

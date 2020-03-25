@@ -10,9 +10,13 @@ public class InterNPC : BaseCharacter
     protected string currentText;
     private UnityEngine.AI.NavMeshAgent agent;
     protected bool CanWalk;
+    public GameObject InteractiveTextBox;
+    
 
     PlayerController player;
     public bool CanMove { get; set; }
+    public bool ActiveTextBox { get; set; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +33,7 @@ public class InterNPC : BaseCharacter
     private void Update()
     {
         Follow();
+        MenuToggle();
     }
 
     public virtual void OnInteract()
@@ -71,6 +76,20 @@ public class InterNPC : BaseCharacter
         {
             CanWalk = true;
             animator.SetBool("CanWalk", true);
+        }
+    }
+
+    protected void MenuToggle()
+    {
+        if(ActiveTextBox)
+        {
+            InteractiveTextBox.SetActive(true);
+            ActiveTextBox = true;
+        }
+        else
+        {
+            InteractiveTextBox.SetActive(false);
+            ActiveTextBox = false;
         }
     }
 

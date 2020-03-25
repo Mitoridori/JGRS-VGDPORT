@@ -25,6 +25,7 @@ public class QuestNPC : InterNPC
     {
         Debug.Log("NPC interacted");
 
+
         if (!AssignedQuest && !Helped)
         {
             AssignQuest();
