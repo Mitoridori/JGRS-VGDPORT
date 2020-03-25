@@ -16,9 +16,7 @@ public class TriggeredEndPoint : MonoBehaviour, IQuestID
     }
     private void OnTriggerEnter(Collider other)
     {
-        PC = other.GetComponent<PlayerController>();
-
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "QuestNPC")
         {
             other.gameObject.GetComponent<InterNPC>().CanMove = false;
             Cleared();

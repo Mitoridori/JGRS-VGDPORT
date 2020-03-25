@@ -16,7 +16,7 @@ public class QuestNPC : InterNPC
     void Awake()
     {
         QM = FindObjectOfType<QuestManager>();
-        CanMove = false;
+        //CanMove = false;
     }
 
     //Function: OnInteract

@@ -29,5 +29,4 @@ MonoBehaviour:
   SecondInprogressText: 
   SecondCompletedText: 
   RewardsList: 
-  CNPC:
-  - Doozy
+  CNPC: []
