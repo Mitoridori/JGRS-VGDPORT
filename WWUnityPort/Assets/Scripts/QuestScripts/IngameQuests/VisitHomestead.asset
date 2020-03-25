@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8088b738c445ab4a904c9f584cd4793, type: 3}
   m_Name: VisitHomestead
   m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
   QuestName: VisitHomestead
   Prereq1: NULL
   Prereq2: NULL
@@ -21,14 +22,14 @@ MonoBehaviour:
   RequiredAmount: 1
   ExperenceReward: 10
   CoinReward: 10
-  QuestObjectives: 
+  QuestObjectives: Take me home
   StartQuestText: Now can you please take me to the old homestead? I'd love to see
     it again.
-  TrackingQuestText: 
-  InprogressQuestText: 
+  TrackingQuestText: Take me to the house
+  InprogressQuestText: I know you can do it!
   CompletedQuestText: Thank you so much, It was a beautiful sight to see.
   SecondInprogressText: 
   SecondCompletedText: 
-  RewardsList: 
+  RewardsList: ' 10'
   CNPC:
   - Doozy

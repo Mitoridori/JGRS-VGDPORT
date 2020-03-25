@@ -9,6 +9,7 @@ public class InterNPC : BaseCharacter
     private Animator animator;
     protected string currentText;
     private UnityEngine.AI.NavMeshAgent agent;
+    protected bool CanWalk;
 
     PlayerController player;
     public bool CanMove { get; set; }
@@ -47,7 +48,29 @@ public class InterNPC : BaseCharacter
             if ((player.transform.position - transform.position).magnitude <= 5)
             {
                 agent.SetDestination(player.transform.position + new Vector3(0, 0, 1));
+                if (animator)
+                    SpeedCheck();
+                    animator.SetLayerWeight(0, 1);
             }
+        }
+        else
+        {
+            CanWalk = false;
+            animator.SetBool("CanWalk", false);
+        }
+    }
+
+    private void SpeedCheck()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) <= 1.5)
+        {
+            CanWalk = false;
+            animator.SetBool("CanWalk", false);
+        }
+        else
+        {
+            CanWalk = true;
+            animator.SetBool("CanWalk", true);
         }
     }
 
