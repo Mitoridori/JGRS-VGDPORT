@@ -11,7 +11,7 @@ public class InterNPC : BaseCharacter
     private UnityEngine.AI.NavMeshAgent agent;
     protected bool CanWalk;
     public GameObject InteractiveTextBox;
-    
+
 
     PlayerController player;
     public bool CanMove { get; set; }
@@ -33,7 +33,6 @@ public class InterNPC : BaseCharacter
     private void Update()
     {
         Follow();
-        MenuToggle();
     }
 
     public virtual void OnInteract()
@@ -79,18 +78,14 @@ public class InterNPC : BaseCharacter
         }
     }
 
-    protected void MenuToggle()
+    public void MenuToggle()
     {
-        if(ActiveTextBox)
-        {
             InteractiveTextBox.SetActive(true);
-            ActiveTextBox = true;
-        }
-        else
-        {
-            InteractiveTextBox.SetActive(false);
-            ActiveTextBox = false;
-        }
+    }
+
+    public void QuitMenu()
+    {
+        InteractiveTextBox.SetActive(false);
     }
 
 }

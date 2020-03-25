@@ -254,7 +254,9 @@ MonoBehaviour:
   jumpSpeed: 0
   walkSpeed: 0
   runSpeed: 0
+  InteractiveTextBox: {fileID: 1786981022}
   QuestList:
+  - {fileID: 11400000, guid: 1ca345b89e5583240b3b7572cef0d4fe, type: 2}
   - {fileID: 11400000, guid: e5b7175d9d6c0884b9cccf91174b231e, type: 2}
 --- !u!1 &238916987
 GameObject:
@@ -464,6 +466,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540080748562865533, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540080748562865533, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540080748562865533, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540080748562865533, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540080748562865533, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 114651932}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5680987561074323237, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
         type: 3}
@@ -1435,6 +1492,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5395336, y: 1.132814, z: 1.4662057}
   m_Center: {x: 0.0000006556511, y: 0.5664063, z: -0.000002682209}
+--- !u!1 &1786981022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6022294774052593263, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+    type: 3}
+  m_PrefabInstance: {fileID: 544143344}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1880512092
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
   Prereq2: NULL
   Description: Take NPC to the homestead
   NPCID: HomeStead
-  TurnInNPCName: 
+  TurnInNPCName: Doozy
   RequiredAmount: 1
   ExperenceReward: 10
   CoinReward: 10

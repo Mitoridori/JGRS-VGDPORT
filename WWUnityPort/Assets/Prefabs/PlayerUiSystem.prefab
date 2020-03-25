@@ -436,13 +436,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6559411964876060146}
-    characterCount: 8
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -553,8 +553,8 @@ MonoBehaviour:
   m_fontSize: 15
   m_fontSizeBase: 15
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 257
@@ -818,13 +818,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -106.25818, w: 0}
   m_textInfo:
     textComponent: {fileID: 5760574741513033124}
-    characterCount: 14
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1129,8 +1129,8 @@ MonoBehaviour:
   m_fontSize: 10
   m_fontSizeBase: 10
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 257
@@ -1303,7 +1303,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219432714575069370}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5680987561074323237}
+        m_MethodName: QuitInteractiveBox
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6022294774052593263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,10 +1445,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1630,13 +1641,13 @@ MonoBehaviour:
   m_margin: {x: -182.39545, y: -90.4021, z: -367.2527, w: -91.86417}
   m_textInfo:
     textComponent: {fileID: 493182285432795951}
-    characterCount: 20
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1699,11 +1710,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDetails: {fileID: 493182285432795951}
   TextTally: {fileID: 8663366112195479782}
-  CoinText: {fileID: 6559411964876060146}
-  NPCBoxOne: {fileID: 8380518229135972165}
-  NPCBoxTwo: {fileID: 2074386848874748783}
+  CoinText: {fileID: 1761630751803104450}
   ToggleButtonA: {fileID: 4554845975560282434}
   ToggleButtonB: {fileID: 4554845975560282434}
+  NPCBoxOne: {fileID: 8380518229135972165}
+  NPCBoxTwo: {fileID: 2074386848874748783}
+  InteractiveQuitButton: {fileID: 5725781457181742153}
+  InteractiveBox: {fileID: 6022294774052593263}
 --- !u!1001 &1332719006308187457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1956,6 +1969,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7450952254027735608, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
         type: 3}
       propertyPath: m_Name
@@ -1968,6 +2006,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0ebeaa4e3a34444b9c95a31aa8972ac, type: 3}
+--- !u!114 &1761630751803104450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2548509964056453180, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 4263978224754638078}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3051378235137745302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1257662958427594088, guid: b0ebeaa4e3a34444b9c95a31aa8972ac,

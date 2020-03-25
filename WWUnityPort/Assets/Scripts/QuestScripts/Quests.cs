@@ -14,7 +14,7 @@ public class Quests : ScriptableObject
 {
     //Items not to be touched. 
     public QuestLogUIManager QUIM;
-    //public Player player;
+    public Player player;
 
     public List<QuestGoal> Goals = new List<QuestGoal>();
     public bool currentQuest { get; set; }
@@ -127,26 +127,17 @@ public class Quests : ScriptableObject
         Debug.Log("Completed Text" + QuestName);
     }
 
-    void OnEnable()
-    {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //player = FindObjectOfType<Player>();
-    }
-
 
     //FUNCTION : GiveReward
     //DESCRIPTION : gives the player the reward for the quest
     public virtual void GiveReward()
     {
-        //player = FindObjectOfType<Player>();
-        //if (player)
-        //{
-        //    player.AddXP(ExperenceReward);
-        //    player.AddCoins(CoinReward);
-        //    player.AddStatPoint(AbilityReward);
-        //}
-
-
+        player = FindObjectOfType<Player>();
+        if (player)
+        {
+            //player.AddXP(ExperenceReward);
+            player.AddCoins(CoinReward);
+        }
         Debug.Log("Quest Reward Given.");
     }
 

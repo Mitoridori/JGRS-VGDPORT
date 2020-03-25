@@ -16,7 +16,7 @@ public class QuestNPC : InterNPC
     void Awake()
     {
         QM = FindObjectOfType<QuestManager>();
-        //CanMove = false;
+        
     }
 
     //Function: OnInteract
@@ -59,7 +59,7 @@ public class QuestNPC : InterNPC
 
                     AssignedQuest = true;
                     Quest.Load();
-                    //UI function
+                    Quest.StartText();
                     Quest.isActive = true;
                     QM.AddActiveQuests(Quest);
                     return;
@@ -79,14 +79,14 @@ public class QuestNPC : InterNPC
             Helped = true;
             AssignedQuest = false;
             QM.addToCQNList(Quest.QuestName);
-            //UIfunction
+            Quest.CompletedText();
             Quest.isActive = false;
             QM.RemoveActiveQuest(Quest);
 
         }
         else
         {
-            //UIfunction
+            Quest.InprogressText();
         }
     }
 
@@ -114,11 +114,6 @@ public class QuestNPC : InterNPC
     {
         currentText = "Thanks for you Help";
         Debug.Log("No Quest Got");
-    }
-
-    public override string GetCurrentText()
-    {
-        return currentText;
     }
 
 }

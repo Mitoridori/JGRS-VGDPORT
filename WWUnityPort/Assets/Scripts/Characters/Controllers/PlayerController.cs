@@ -137,7 +137,7 @@ public class PlayerController : BaseController
                 {
                     case "QuestNPC":
                         hit.collider.gameObject.GetComponent<InterNPC>().OnInteract();
-                        hit.collider.gameObject.GetComponent<InterNPC>().ActiveTextBox = true;
+                        hit.collider.gameObject.GetComponent<InterNPC>().MenuToggle();
                         break;
                     case "NPCTalk":
 

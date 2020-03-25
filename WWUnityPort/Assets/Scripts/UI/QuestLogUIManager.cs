@@ -9,12 +9,15 @@ public class QuestLogUIManager : MonoBehaviour
     public TextMeshProUGUI TextDetails;
     public TextMeshProUGUI TextTally;
     public TextMeshProUGUI CoinText;
+    public GameObject ToggleButtonA;
+    public GameObject ToggleButtonB;
 
 
     public TextMeshProUGUI NPCBoxOne;
     public TextMeshProUGUI NPCBoxTwo;
-    public GameObject ToggleButtonA;
-    public GameObject ToggleButtonB;
+    public GameObject InteractiveQuitButton;
+    public GameObject InteractiveBox;
+
     bool toggle = false;
 
     QuestNPC QG;
@@ -39,8 +42,8 @@ public class QuestLogUIManager : MonoBehaviour
     {
         TextDetails.text = "Quest log is currently empty.";
         TextTally.text = " ";
-        NPCBoxOne.text = "Welcome Alison";
-        NPCBoxTwo.text = "Thank you for your help.";
+        //NPCBoxOne.text = "Welcome Alison";
+        //NPCBoxTwo.text = " ";
     }
 
     public void PlayerLogOpen()
@@ -57,5 +60,10 @@ public class QuestLogUIManager : MonoBehaviour
             ToggleButtonB.SetActive(false);
             toggle = false;
         }
+    }
+
+    public void QuitInteractiveBox()
+    {
+        InteractiveBox.SetActive(false);
     }
 }
