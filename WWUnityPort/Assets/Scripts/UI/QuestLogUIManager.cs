@@ -12,7 +12,7 @@ public class QuestLogUIManager : MonoBehaviour
     public TextMeshProUGUI NPCBoxTwo;
     public GameObject ToggleButtonA;
     public GameObject ToggleButtonB;
-    bool toggle = true;
+    bool toggle = false;
 
     QuestNPC QG;
 
