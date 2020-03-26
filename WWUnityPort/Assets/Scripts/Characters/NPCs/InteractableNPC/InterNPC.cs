@@ -33,6 +33,7 @@ public class InterNPC : BaseCharacter
     private void Update()
     {
         Follow();
+        CloseMenuToggle();
     }
     
     public void Interact()
@@ -88,9 +89,12 @@ public class InterNPC : BaseCharacter
             InteractiveTextBox.SetActive(true);
     }
 
-    public void QuitMenu()
+    public void CloseMenuToggle()
     {
-        InteractiveTextBox.SetActive(false);
+        if (Vector3.Distance(transform.position, player.transform.position) >= 2)
+        {
+            InteractiveTextBox.SetActive(false);
+        }
     }
 
 }
