@@ -735,7 +735,7 @@ Animator:
   m_GameObject: {fileID: 1588090451174212}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0962bdca27eaca34aaa15f7fdf608faf, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8beaedaf7a4023642b48737ef7ee04b7, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce43ecfaec6bdba47a3cb015baf54424, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422fb6956201c7944ae2113a1a53b0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTasksPerTick: 500
+  maxTasksPerTick: 100
   behavior: {fileID: 11400000, guid: 0da306eb959bc284d8fb1348d3c612a0, type: 2}
   paused: 0
   restartWhenFinished: 0
@@ -787,7 +787,7 @@ MonoBehaviour:
     objectParamsNames:
     - Player
     - wanderArea
-    - animationClip
+    - walk
     objectParamsLostDefaultValue: 
     layerMaskParams: []
     layerMaskParamsNames: []
