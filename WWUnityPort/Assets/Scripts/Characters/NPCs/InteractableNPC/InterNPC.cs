@@ -38,7 +38,7 @@ public class InterNPC : BaseCharacter
     
     public void Interact()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= 2)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
             OnInteract();
             MenuToggle();
@@ -94,7 +94,7 @@ public class InterNPC : BaseCharacter
 
     public void CloseMenuToggle()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) >= 2)
+        if (Vector3.Distance(transform.position, player.transform.position) >= 4)
         {
             InteractiveTextBox.SetActive(false);
         }
