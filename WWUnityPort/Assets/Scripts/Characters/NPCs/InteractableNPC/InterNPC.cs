@@ -38,8 +38,11 @@ public class InterNPC : BaseCharacter
     
     public void Interact()
     {
-        OnInteract();
-        MenuToggle();
+        if (Vector3.Distance(transform.position, player.transform.position) <= 2)
+        {
+            OnInteract();
+            MenuToggle();
+        }
     }
     public virtual void OnInteract()
     {
