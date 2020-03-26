@@ -135,7 +135,18 @@ public class PlayerController : BaseController
             {
                 switch (hit.collider.tag)
                 {
+                    /*Perhaps just getting the interface component and calling OnInteract() should be enough - would allow you to remove the switch statemnt
+                    This way you can add anything you like to interact with, and you don't need to navigate here to add in a new case.
+
+                    interface = hit.collider.gameObject.GetComponent<InterNPC>()
+                    if(interface){
+                        interface.OnInteract();
+                    }
+
+                    Now the MenuToggle can be called within the OnInteract() for the specific Object
+                     */
                     case "QuestNPC":
+                        //Maybe get the component once - can be expensive if their are a lot of components on the GameObject
                         hit.collider.gameObject.GetComponent<InterNPC>().OnInteract();
                         hit.collider.gameObject.GetComponent<InterNPC>().MenuToggle();
                         break;
