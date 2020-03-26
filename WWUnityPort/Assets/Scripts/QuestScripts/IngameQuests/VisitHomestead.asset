@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VisitHomestead
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
+  player: {fileID: 0}
   QuestName: VisitHomestead
   Prereq1: NULL
   Prereq2: NULL
@@ -22,11 +23,11 @@ MonoBehaviour:
   RequiredAmount: 1
   ExperenceReward: 10
   CoinReward: 10
-  QuestObjectives: Take me home
-  StartQuestText: Now can you please take me to the old homestead? I'd love to see
-    it again.
-  TrackingQuestText: Take me to the house
-  InprogressQuestText: I know you can do it!
+  QuestObjectives: Take Doozy to his old home.
+  StartQuestText: 'Now can you please take me to the old homestead? I''d love to see
+    it again. Its just down the path by the large mountain. '
+  TrackingQuestText: Take Doozy to his old home.
+  InprogressQuestText: 'I know you can do it! Just down the path by the large mountain. '
   CompletedQuestText: Thank you so much, It was a beautiful sight to see.
   SecondInprogressText: 
   SecondCompletedText: 
