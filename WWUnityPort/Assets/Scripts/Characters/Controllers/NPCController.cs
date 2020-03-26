@@ -5,16 +5,15 @@ using UnityEngine;
 public class NPCController : BaseController
 {
 
-
+    Animator animator;
+    BehaviorExecutor executor;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        animator = GetComponent<Animator>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        executor = GetComponent<BehaviorExecutor>();
+
+        executor.SetBehaviorParam("walk", animator.GetCurrentAnimatorStateInfo(0).IsName("Run"));
     }
 }

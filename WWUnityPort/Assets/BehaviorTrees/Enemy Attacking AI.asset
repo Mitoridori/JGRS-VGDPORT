@@ -18,7 +18,7 @@ MonoBehaviour:
     id=\"0\" guid=\"f8c12052ebec91a4492912f6ee8f9cee\" nextId=\"25\">\r\n      <root>\r\n
     \       <RepeatDecorator id=\"15\" />\r\n      </root>\r\n      <inputParams>\r\n
     \       <inputValues>\r\n          <entry name=\"Player\" type=\"UnityEngine.GameObject\"
-    isBlackboard=\"True\" blackboard=\"Player\" />\r\n          <entry name=\"animationClip\"
+    isBlackboard=\"True\" blackboard=\"Player\" />\r\n          <entry name=\"walk\"
     type=\"UnityEngine.AnimationClip\" isBlackboard=\"False\" />\r\n        </inputValues>\r\n
     \     </inputParams>\r\n      <outputParams>\r\n        <outputValues>\r\n          <entry
     name=\"isAttacking\" type=\"System.Boolean\" isBlackboard=\"True\" />\r\n        </outputValues>\r\n
@@ -54,11 +54,17 @@ MonoBehaviour:
     type=\"UnityEngine.GameObject\" isBlackboard=\"False\" />\r\n          <entry
     name=\"didReach\" type=\"System.Boolean\" isBlackboard=\"False\" value=\"False\"
     />\r\n          <entry name=\"Player\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
-    />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams>\r\n
-    \       <outputValues>\r\n          <entry name=\"foundGameObject\" type=\"UnityEngine.GameObject\"
-    isBlackboard=\"True\" />\r\n          <entry name=\"randomPosition\" type=\"UnityEngine.Vector3\"
-    isBlackboard=\"True\" />\r\n        </outputValues>\r\n      </outputParams>\r\n
-    \     <localParams />\r\n    </SubbehaviorNode>\r\n    <ActionNode id=\"21\" action=\"GameObject/LookAt\">\r\n
+    />\r\n          <entry name=\"isAttacking\" type=\"System.Boolean\" isBlackboard=\"False\"
+    value=\"False\" />\r\n          <entry name=\"Animator\" type=\"System.String\"
+    isBlackboard=\"False\" />\r\n          <entry name=\"animationClip\" type=\"UnityEngine.AnimationClip\"
+    isBlackboard=\"True\" blackboard=\"walk\" />\r\n          <entry name=\"walk\"
+    type=\"UnityEngine.AnimationClip\" isBlackboard=\"True\" blackboard=\"walk\" />\r\n
+    \       </inputValues>\r\n      </inputParams>\r\n      <outputParams>\r\n        <outputValues>\r\n
+    \         <entry name=\"foundGameObject\" type=\"UnityEngine.GameObject\" isBlackboard=\"True\"
+    />\r\n          <entry name=\"randomPosition\" type=\"UnityEngine.Vector3\" isBlackboard=\"True\"
+    />\r\n          <entry name=\"component\" type=\"UnityEngine.Component\" isBlackboard=\"True\"
+    blackboard=\"\" />\r\n        </outputValues>\r\n      </outputParams>\r\n      <localParams
+    />\r\n    </SubbehaviorNode>\r\n    <ActionNode id=\"21\" action=\"GameObject/LookAt\">\r\n
     \     <inputParams>\r\n        <inputValues>\r\n          <entry name=\"target\"
     type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"Player\" />\r\n
     \       </inputValues>\r\n      </inputParams>\r\n      <outputParams />\r\n      <localParams
