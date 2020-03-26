@@ -13,7 +13,5 @@ public class NPCController : BaseController
         animator = GetComponent<Animator>();
 
         executor = GetComponent<BehaviorExecutor>();
-
-        executor.SetBehaviorParam("walk", animator.GetCurrentAnimatorStateInfo(0).IsName("Run"));
     }
 }
