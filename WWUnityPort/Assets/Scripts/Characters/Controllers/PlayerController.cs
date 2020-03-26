@@ -146,9 +146,7 @@ public class PlayerController : BaseController
                     Now the MenuToggle can be called within the OnInteract() for the specific Object
                      */
                     case "QuestNPC":
-                        //Maybe get the component once - can be expensive if their are a lot of components on the GameObject
-                        hit.collider.gameObject.GetComponent<InterNPC>().OnInteract();
-                        hit.collider.gameObject.GetComponent<InterNPC>().MenuToggle();
+                        hit.collider.gameObject.GetComponent<InterNPC>().Interact();
                         break;
                     case "NPCTalk":
 

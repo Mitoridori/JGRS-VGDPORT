@@ -34,7 +34,12 @@ public class InterNPC : BaseCharacter
     {
         Follow();
     }
-
+    
+    public void Interact()
+    {
+        OnInteract();
+        MenuToggle();
+    }
     public virtual void OnInteract()
     {
         Debug.Log("NPC interacted");
