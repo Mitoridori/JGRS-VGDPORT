@@ -11,7 +11,11 @@ public class PlayerController : BaseController
         isWalking = walkByDefault;
 
         if (Input.GetAxis("Run") != 0)
+        {
             isWalking = !walkByDefault;
+            animController.SetBool("Running", true);
+        }
+
 
         if (grounded)
         {
