@@ -133,28 +133,8 @@ public class PlayerController : BaseController
 
             if (Physics.Raycast(ray, out hit))
             {
-                switch (hit.collider.tag)
-                {
-                    /*Perhaps just getting the interface component and calling OnInteract() should be enough - would allow you to remove the switch statemnt
-                    This way you can add anything you like to interact with, and you don't need to navigate here to add in a new case.
-
-                    interface = hit.collider.gameObject.GetComponent<InterNPC>()
-                    if(interface){
-                        interface.OnInteract();
-                    }
-
-                    Now the MenuToggle can be called within the OnInteract() for the specific Object
-                     */
-                    case "QuestNPC":
-                        hit.collider.gameObject.GetComponent<InterNPC>().Interact();
-                        break;
-                    case "NPCTalk":
-
-                        break;
-                    default:
-                        break;
-
-                }
+                if(hit.collider.gameObject.GetComponent<IInteractable>() != null)
+                    hit.collider.gameObject.GetComponent<IInteractable>().OnInteract();
             }
 
         }

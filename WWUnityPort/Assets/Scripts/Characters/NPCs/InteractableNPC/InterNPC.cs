@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class InterNPC : BaseCharacter
 {
@@ -8,7 +9,7 @@ public class InterNPC : BaseCharacter
     private BehaviorExecutor executor;
     private Animator animator;
     protected string currentText;
-    private UnityEngine.AI.NavMeshAgent agent;
+    private NavMeshAgent agent;
     protected bool CanWalk;
     public GameObject InteractiveTextBox;
 
@@ -24,7 +25,7 @@ public class InterNPC : BaseCharacter
 
         executor = GetComponent<BehaviorExecutor>();
 
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
 
         player = FindObjectOfType<PlayerController>();
          
@@ -40,13 +41,8 @@ public class InterNPC : BaseCharacter
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
-            OnInteract();
             MenuToggle();
         }
-    }
-    public virtual void OnInteract()
-    {
-        Debug.Log("NPC interacted");
     }
 
     public virtual string GetCurrentText()

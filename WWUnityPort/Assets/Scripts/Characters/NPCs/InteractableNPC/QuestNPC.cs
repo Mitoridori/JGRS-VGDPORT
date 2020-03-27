@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestNPC : InterNPC
+public class QuestNPC : InterNPC, IInteractable
 {
     //UI and Quests.cs to link to
     QuestManager QM;
@@ -21,9 +21,9 @@ public class QuestNPC : InterNPC
 
     //Function: OnInteract
     //DESCRIPTION: this function is used to say what the quest giver does when it is interacted with
-    public override void OnInteract()
+    public void OnInteract()
     {
-        Debug.Log("NPC interacted");
+        Interact();
 
 
         if (!AssignedQuest && !Helped)
