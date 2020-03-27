@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c634df9a70b52d94899be86d3272957b
+guid: abba45ae8429984408052c4c0091b031
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -119,7 +119,7 @@ ModelImporter:
     400110: mixamorig1:Spine
     400112: mixamorig1:Spine1
     400114: mixamorig1:Spine2
-    7400000: Walking
+    7400000: DoozyWalking
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -150,10 +150,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: DoozyWalking
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 68
+      lastFrame: 42
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

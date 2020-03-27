@@ -2400,7 +2400,7 @@ MonoBehaviour:
   autoZoomSpeed: 5
   collisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   alwaysRotateToRearofTarget: 0
   allowMouseInputX: 1
   allowMouseInputY: 1
