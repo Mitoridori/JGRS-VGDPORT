@@ -64,6 +64,6 @@ public class QuestLogUIManager : MonoBehaviour
 
     public void QuitInteractiveBox()
     {
-        InteractiveBox.SetActive(false);
+        InteractiveBox.SetActive(QG.ToggleIsActive());
     }
 }

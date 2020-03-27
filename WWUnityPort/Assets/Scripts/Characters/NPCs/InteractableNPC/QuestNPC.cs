@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestNPC : InterNPC, IInteractable
+public class QuestNPC : InterNPC
 {
     //UI and Quests.cs to link to
     QuestManager QM;
@@ -19,13 +19,9 @@ public class QuestNPC : InterNPC, IInteractable
         
     }
 
-    //Function: OnInteract
-    //DESCRIPTION: this function is used to say what the quest giver does when it is interacted with
-    public void OnInteract()
+    public override void Interact()
     {
-        Interact();
-
-
+        isActive = !isActive;
         if (!AssignedQuest && !Helped)
         {
             AssignQuest();
@@ -38,7 +34,6 @@ public class QuestNPC : InterNPC, IInteractable
         {
             NextQuest();
         }
-       
     }
 
     //FUNCTION : AssignedQuest

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class InterNPC : BaseCharacter
+public class InterNPC : BaseCharacter, IInteractable
 {
 
     private BehaviorExecutor executor;
@@ -12,11 +12,11 @@ public class InterNPC : BaseCharacter
     private NavMeshAgent agent;
     protected bool CanWalk;
     public GameObject InteractiveTextBox;
+    protected bool isActive = false;
 
 
     PlayerController player;
     public bool CanMove { get; set; }
-    public bool ActiveTextBox { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -34,14 +34,20 @@ public class InterNPC : BaseCharacter
     private void Update()
     {
         Follow();
-        CloseMenuToggle();
+        MenuToggle(isActive);
     }
     
-    public void Interact()
+    public virtual void Interact()
+    {
+
+    }
+
+    public void OnInteract()
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
-            MenuToggle();
+            Interact();
+            MenuToggle(isActive);
         }
     }
 
@@ -83,9 +89,14 @@ public class InterNPC : BaseCharacter
         }
     }
 
-    public void MenuToggle()
+    public void MenuToggle(bool isOpen)
     {
-            InteractiveTextBox.SetActive(true);
+        InteractiveTextBox.SetActive(isOpen);
+
+        if (Vector3.Distance(transform.position, player.transform.position) >= 4 && InteractiveTextBox.activeInHierarchy)
+        {
+            isActive = !isActive;
+        }
     }
 
     public void CloseMenuToggle()
@@ -96,4 +107,8 @@ public class InterNPC : BaseCharacter
         }
     }
 
+    public bool ToggleIsActive()
+    {
+        return isActive = !isActive;
+    }
 }
