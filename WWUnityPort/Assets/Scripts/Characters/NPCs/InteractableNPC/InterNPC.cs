@@ -15,7 +15,8 @@ public class InterNPC : BaseCharacter, IInteractable
     protected bool isActive = false;
 
 
-    PlayerController player;
+    protected Player player;
+
     public bool CanMove { get; set; }
 
     // Start is called before the first frame update
@@ -27,14 +28,14 @@ public class InterNPC : BaseCharacter, IInteractable
 
         agent = GetComponent<NavMeshAgent>();
 
-        player = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<Player>();
          
     }
 
-    private void Update()
+    public virtual void Update()
     {
-        Follow();
-        MenuToggle(isActive);
+        //Follow();
+        //MenuToggle(isActive);
     }
     
     public virtual void Interact()

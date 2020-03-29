@@ -18,6 +18,8 @@ public class QuestLogUIManager : MonoBehaviour
     public GameObject InteractiveQuitButton;
     public GameObject InteractiveBox;
 
+    public GameObject ShopInteractiveBox;
+
     bool toggle = false;
 
     QuestNPC QG;
@@ -66,4 +68,10 @@ public class QuestLogUIManager : MonoBehaviour
     {
         InteractiveBox.SetActive(QG.ToggleIsActive());
     }
+
+    public void QuitShopBox()
+    {
+        ShopInteractiveBox.SetActive(QG.ToggleIsActive());
+    }
+
 }

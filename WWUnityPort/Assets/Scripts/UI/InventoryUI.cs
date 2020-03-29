@@ -7,11 +7,11 @@ public class InventoryUI : MonoBehaviour
     public GameObject inventoryUI;  // The entire UI
     public Transform itemsParent;   // The parent object of all the items
 
-    Inventory inventory;    // Our current inventory
+    PlayerInventory inventory;    // Our current inventory
 
     void Start()
     {
-        inventory = FindObjectOfType<Inventory>();
+        inventory = FindObjectOfType<PlayerInventory>();
         inventory.onItemChangedCallback += UpdateUI;
     }
 
@@ -21,7 +21,7 @@ public class InventoryUI : MonoBehaviour
         //if (Input.GetButtonDown("Inventory"))
         //{
         //    inventoryUI.SetActive(!inventoryUI.activeSelf);
-        //    UpdateUI();
+                UpdateUI();
         //}
     }
 

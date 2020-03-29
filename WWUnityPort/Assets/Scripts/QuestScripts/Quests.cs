@@ -106,7 +106,7 @@ public class Quests : ScriptableObject
                 QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
             }
         }
-        Debug.Log("Tracking Quest" + QuestName);
+        //Debug.Log("Tracking Quest" + QuestName);
     }
     public virtual void InprogressText()
     {
