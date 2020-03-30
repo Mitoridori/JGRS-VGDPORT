@@ -25,6 +25,12 @@ public class ShopNPC : InterNPC
         Debug.Log("ShopKeeper interacted with.");
     }
 
+    public void GetItem()
+    {
+        //inventory.
+    }
+
+
 
     public void SellItem(Item item)
     {

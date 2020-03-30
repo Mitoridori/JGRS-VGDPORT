@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 /* The base item class. All items should derive from this. */
 
@@ -10,8 +12,17 @@ public class Item : ScriptableObject
     public Sprite icon = null;              // Item icon
     public bool showInInventory = true;
     Inventory inventory;
-    //public Alison alison;
     public int ItemCost;
+
+    [TextArea(3, 10)]
+    public string details;
+
+
+    public virtual string GetDetails()
+    {
+        return details;
+    }
+
     // Called when the item is pressed in the inventory
     public void Start()
     {

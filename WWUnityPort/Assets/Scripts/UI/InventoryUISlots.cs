@@ -51,5 +51,14 @@ public class InventoryUISlots : MonoBehaviour
         }
     }
 
+    public void ItemDetails()
+    {
+        if (item != null)
+        {
+            item.GetDetails();
+        }
+            
+    }
+
 }
 
