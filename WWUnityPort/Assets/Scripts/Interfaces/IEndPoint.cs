@@ -5,6 +5,6 @@ using UnityEngine;
 public interface IEndPoint
 {
 
-    bool DidReach();
+    bool DidReach(bool condition);
 
 }

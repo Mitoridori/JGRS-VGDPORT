@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class InterNPC : BaseCharacter, IInteractable
 {
 
-    private BehaviorExecutor executor;
+    protected BehaviorExecutor executor;
     private Animator animator;
     protected string currentText;
     private NavMeshAgent agent;
@@ -29,7 +29,9 @@ public class InterNPC : BaseCharacter, IInteractable
         agent = GetComponent<NavMeshAgent>();
 
         player = FindObjectOfType<Player>();
-         
+
+        if (executor)
+            executor.enabled = false;
     }
 
     public virtual void Update()
@@ -48,7 +50,8 @@ public class InterNPC : BaseCharacter, IInteractable
         if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
             Interact();
-            MenuToggle(isActive);
+            if(InteractiveTextBox)
+                MenuToggle(isActive);
         }
     }
 

@@ -14,7 +14,7 @@ public class DestinationPoint : MonoBehaviour
     {
         if(other.GetComponent<IEndPoint>() != null)
         {
-            other.GetComponent<IEndPoint>().DidReach();
+            other.GetComponent<IEndPoint>().DidReach(true);
         }
     }
 }
