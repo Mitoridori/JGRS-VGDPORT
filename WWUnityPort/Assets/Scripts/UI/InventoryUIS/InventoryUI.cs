@@ -31,7 +31,7 @@ public class InventoryUI : MonoBehaviour
     // This is called using a delegate on the Inventory.
     public void UpdateUI()
     {
-        InventoryUISlots[] slots = GetComponentsInChildren<InventoryUISlots>();
+        InventoryUISlots[] slots = itemsParent.GetComponentsInChildren<InventoryUISlots>();
 
         for (int i = 0; i < slots.Length; i++)
         {

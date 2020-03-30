@@ -71,7 +71,7 @@ public class QuestLogUIManager : MonoBehaviour
 
     public void QuitShopBox()
     {
-        ShopInteractiveBox.SetActive(QG.ToggleIsActive());
+        ShopInteractiveBox.SetActive(false);
     }
 
 }

@@ -3097,7 +3097,6 @@ MonoBehaviour:
   walkSpeed: 0
   runSpeed: 0
   InteractiveTextBox: {fileID: 1444392302}
-  itemsParent: {fileID: 1991447834}
 --- !u!143 &647343504
 CharacterController:
   m_ObjectHideFlags: 0
@@ -10448,26 +10447,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1807676129}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1809971869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3746343617331014431, guid: 2b0d310b246df5e43a9faebee701e017,
-    type: 3}
-  m_PrefabInstance: {fileID: 325941427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1809971870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809971869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c1e8d6dc14b7d94db6e0806c26ee089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  space: 6
-  items: []
 --- !u!1001 &1825517864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11405,12 +11384,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 424814, guid: a1d761911149f7845aac6ec33c36f40e,
     type: 3}
   m_PrefabInstance: {fileID: 1973575196}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1991447834 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6220052037779818133, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
-    type: 3}
-  m_PrefabInstance: {fileID: 1509099960}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2004362215
 PrefabInstance:
