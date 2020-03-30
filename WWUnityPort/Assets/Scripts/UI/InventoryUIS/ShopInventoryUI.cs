@@ -12,7 +12,7 @@ public class ShopInventoryUI : InventoryUI
 
     void Start()
     {
-        inventory = GetComponent<ShopInventory>();
+        inventory = FindObjectOfType<ShopInventory>();
         inventory.onItemChangedCallback += UpdateUI;
         PI = FindObjectOfType<PlayerInventory>();
     }
