@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopInventoryUI : InventoryUI
+public class ShopInventoryUI : MonoBehaviour
 
 {
     // Start is called before the first frame update
-
+    public Transform itemsParent;   // The parent object of all the items
     ShopInventory inventory;    // Our current inventory
     PlayerInventory PI;
 
@@ -36,5 +36,21 @@ public class ShopInventoryUI : InventoryUI
         }
     }
 
+    public void UpdateUI()
+    {
+        InventoryUISlots[] slots = itemsParent.GetComponentsInChildren<InventoryUISlots>();
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (i < inventory.items.Count)
+            {
+                slots[i].AddItem(inventory.items[i]);
+            }
+            else
+            {
+                slots[i].ClearSlot();
+            }
+        }
+    }
 
 }
