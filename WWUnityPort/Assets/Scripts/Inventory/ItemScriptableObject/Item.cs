@@ -20,6 +20,7 @@ public class Item : ScriptableObject
 
     public virtual string GetDetails()
     {
+        
         return details;
     }
 
