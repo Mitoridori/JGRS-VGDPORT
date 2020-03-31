@@ -13,11 +13,15 @@ public class InventoryUISlots : MonoBehaviour
 
     Item item;  // Current item in the slot
     Inventory inventory;
+    PlayerInventory PI;
+    Player player;
+
 
     private void Awake()
     {
         inventory = FindObjectOfType<Inventory>();
-
+        PI = FindObjectOfType<PlayerInventory>();
+        player = FindObjectOfType<Player>();
 
     }
 
@@ -73,12 +77,26 @@ public class InventoryUISlots : MonoBehaviour
             transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/MoneyBar/MoneyBarPrefab/CoinText (TMP)").GetComponent<TextMeshProUGUI>().SetText(" "+ item.ItemCost);
 
             //Buy button
-            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/BuyButton").GetComponent<Button>().onClick.Invoke();
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/BuyButton").GetComponent<Button>().onClick.AddListener(SellItem);
 
         }           
     }
 
-
+    public void SellItem()
+    {
+        if (item != null)
+        {
+            if (!PI.IsFull() && player.GetPlayerCoins() > item.ItemCost)
+            {
+                PI.Add(item);
+                player.SubtractCoins(item.ItemCost);
+            }
+            else
+            {
+                Debug.Log("Your inventory is full");
+            }
+        }
+    }
 
 
 

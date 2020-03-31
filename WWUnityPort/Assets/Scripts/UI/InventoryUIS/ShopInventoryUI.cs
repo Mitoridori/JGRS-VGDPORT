@@ -27,31 +27,6 @@ public class ShopInventoryUI : MonoBehaviour
         UpdateUI();
     }
 
-    public void GetDetails()
-    {
-
-        //something about finding the inventory item information stored in that button. 
-
-
-        //displaying that information in the right text boxes. 
-
-
-
-    }
-
-    public void SellItem(Item item)
-    {
-        if (!PI.IsFull())
-        {
-            PI.Add(item);
-            //player.SubtractCoins(item.ItemCost);
-        }
-        else
-        {
-            Debug.Log("Your inventory is full");
-        }
-    }
-
     public void UpdateUI()
     {
         
