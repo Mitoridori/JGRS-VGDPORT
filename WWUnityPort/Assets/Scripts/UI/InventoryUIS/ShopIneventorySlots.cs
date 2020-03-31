@@ -1,18 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
-public class ShopIneventorySlots : InventoryUISlots
+public class ShopIneventorySlots : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Image icon;
+    public Button removeButton;
+
+    Item item;  // Current item in the slot
+    Inventory inventory;
+
+    private void Awake()
     {
-        
+        inventory = FindObjectOfType<Inventory>();
     }
 
-    // Update is called once per frame
-    void Update()
+    // Add item to the slot
+    public void AddItem(Item newItem)
     {
-        
+        item = newItem;
+
+        icon.sprite = item.icon;
+        icon.enabled = true;
+        removeButton.interactable = true;
     }
+
+    public void ItemDetails()
+    {
+        if (item != null)
+        {
+            item.GetDetails();
+        }
+
+    }
+
 }
+

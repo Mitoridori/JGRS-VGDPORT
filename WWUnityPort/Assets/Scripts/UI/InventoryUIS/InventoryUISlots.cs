@@ -2,11 +2,14 @@
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class InventoryUISlots : MonoBehaviour
 {
     public Image icon;
     public Button removeButton;
+
+    GameObject TextField; 
 
     Item item;  // Current item in the slot
     Inventory inventory;
@@ -14,6 +17,8 @@ public class InventoryUISlots : MonoBehaviour
     private void Awake()
     {
         inventory = FindObjectOfType<Inventory>();
+
+
     }
 
     // Add item to the slot
@@ -55,10 +60,27 @@ public class InventoryUISlots : MonoBehaviour
     {
         if (item != null)
         {
-            item.GetDetails();
-        }
-            
+            //Item Name
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/ItemNameText (TMP)").GetComponent<TextMeshProUGUI>().SetText(item.name);
+
+            //Item Description
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/ItemDescriptionText (TMP)").GetComponent<TextMeshProUGUI>().SetText(item.details);
+
+            //Item Images
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/ItemIconImage").GetComponent<Image>().sprite = item.icon;
+
+            //Item Cost
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/MoneyBar/MoneyBarPrefab/CoinText (TMP)").GetComponent<TextMeshProUGUI>().SetText(" "+ item.ItemCost);
+
+            //Buy button
+            transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/BuyButton").GetComponent<Button>().onClick.Invoke();
+
+        }           
     }
+
+
+
+
 
 }
 
