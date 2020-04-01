@@ -10,7 +10,7 @@ public class BaseCollectible : MonoBehaviour, IQuestID, IInteractable
     public List<Item> item;
     protected PlayerInventory PI;
     Player player;
-
+    ErrorMessage EM;
 
     public string ID { get; set; }
 
@@ -21,6 +21,7 @@ public class BaseCollectible : MonoBehaviour, IQuestID, IInteractable
         ID = ItemID;
         PI = FindObjectOfType<PlayerInventory>();
         player = FindObjectOfType<Player>();
+        EM = FindObjectOfType<ErrorMessage>();
 
     }
     public virtual void OnInteract()
@@ -37,6 +38,7 @@ public class BaseCollectible : MonoBehaviour, IQuestID, IInteractable
         }
         else if (PI.IsFull())
         {
+            EM.InventoryFull();
             Debug.Log("Your inventory is full");
         }
     }

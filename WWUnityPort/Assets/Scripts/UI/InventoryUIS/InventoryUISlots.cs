@@ -15,6 +15,7 @@ public class InventoryUISlots : MonoBehaviour
     Inventory inventory;
     PlayerInventory PI;
     Player player;
+    ErrorMessage EM;
 
 
     private void Awake()
@@ -22,6 +23,7 @@ public class InventoryUISlots : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         PI = FindObjectOfType<PlayerInventory>();
         player = FindObjectOfType<Player>();
+        EM = FindObjectOfType<ErrorMessage>();
 
     }
 
@@ -93,10 +95,12 @@ public class InventoryUISlots : MonoBehaviour
             }
             else if (PI.IsFull())
             {
+                EM.InventoryFull();
                 Debug.Log("Your inventory is full");
             }
             else
             {
+                EM.NoCoin();
                 Debug.Log("You don't have enough coin");
             }
         }
