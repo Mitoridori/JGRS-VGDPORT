@@ -6,11 +6,16 @@ public class Inventory : MonoBehaviour
 {
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
-
+    public ErrorMessage EM;
     public int space = 10;  // Amount of item spaces
 
     // Our current list of items in the inventory
     public List<Item> items = new List<Item>();
+
+    private void Start()
+    {
+        EM = FindObjectOfType<ErrorMessage>();
+    }
 
     // Add a new item if enough room
     public void Add(Item item)
@@ -19,6 +24,7 @@ public class Inventory : MonoBehaviour
         {
             if (items.Count >= space)
             {
+                EM.InventoryFull();
                 Debug.Log("Not enough room.");
                 return;
             }

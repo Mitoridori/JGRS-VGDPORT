@@ -15,6 +15,7 @@ public class Quests : ScriptableObject
     //Items not to be touched. 
     public QuestLogUIManager QUIM;
     public Player player;
+    public PlayerInventory PI;
 
     public List<QuestGoal> Goals = new List<QuestGoal>();
     public bool currentQuest { get; set; }
@@ -33,6 +34,7 @@ public class Quests : ScriptableObject
     public string Prereq2;
     public string Description;
     public string NPCID;
+    public List<Item> QuestItems = new List<Item>();
     public string TurnInNPCName;
 
     public int RequiredAmount;
@@ -60,19 +62,12 @@ public class Quests : ScriptableObject
     public virtual string Reward()
     {
         string coin;
-        //string exp;
         if (CoinReward > 0)
         {
             coin = " " + CoinReward;
         }
         else
             coin = "";
-        //if (ExperenceReward > 0)
-        //{
-        //    exp = "Experence: " + ExperenceReward;
-        //}
-        //else
-        //    exp = "";
         return RewardsList = coin;
     }
 
@@ -132,6 +127,15 @@ public class Quests : ScriptableObject
     //DESCRIPTION : gives the player the reward for the quest
     public virtual void GiveReward()
     {
+        for (int i = 0; i < QuestItems.Count; i++)
+        {
+            for (int j = 0; j < RequiredAmount; j++)
+            {
+                PI = FindObjectOfType<PlayerInventory>();
+                PI.Remove(QuestItems[i]);
+            }
+        }
+
         player = FindObjectOfType<Player>();
         if (player)
         {
