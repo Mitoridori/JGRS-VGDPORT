@@ -7,6 +7,11 @@ public class BaseCollectible : MonoBehaviour, IQuestID
     public string ItemID;
     public int ResetTime;
 
+    public Item item;
+    PlayerInventory PI;
+    Player player;
+
+
     public string ID { get; set; }
 
     PlayerController PC;
@@ -14,14 +19,29 @@ public class BaseCollectible : MonoBehaviour, IQuestID
     private void Awake()
     {
         ID = ItemID;
+        PI = FindObjectOfType<PlayerInventory>();
+        player = FindObjectOfType<Player>();
 
     }
     public void OnInteract()
     {
-        gameObject.SetActive(false);
-        Cleared();
+        if (!PI.IsFull())
+        {
+            PI.Add(item);
 
-        Invoke("reset", ResetTime);
+            gameObject.SetActive(false);
+
+            Cleared();
+
+            Invoke("reset", ResetTime);
+        }
+        else if (PI.IsFull())
+        {
+            Debug.Log("Your inventory is full");
+        }
+
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,11 +50,21 @@ public class BaseCollectible : MonoBehaviour, IQuestID
 
         if (other.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
-            Cleared();
-        }
-        this.Invoke("reset", ResetTime);
+            if (!PI.IsFull())
+            {
+                PI.Add(item);
 
+                gameObject.SetActive(false);
+
+                Cleared();
+
+                Invoke("reset", ResetTime);
+            }
+            else if (PI.IsFull())
+            {
+                Debug.Log("Your inventory is full");
+            }
+        }
     }
 
     void reset()

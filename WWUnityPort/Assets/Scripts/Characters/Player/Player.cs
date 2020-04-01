@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player : BaseCharacter
 {
-    private int playerCoins;
+    private int playerCoins = 50;
     public TextMeshProUGUI CoinText;
 
     // Start is called before the first frame update

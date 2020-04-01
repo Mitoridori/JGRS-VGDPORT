@@ -86,14 +86,18 @@ public class InventoryUISlots : MonoBehaviour
     {
         if (item != null)
         {
-            if (!PI.IsFull() && player.GetPlayerCoins() > item.ItemCost)
+            if (!PI.IsFull() && player.GetPlayerCoins() >= item.ItemCost)
             {
                 PI.Add(item);
                 player.SubtractCoins(item.ItemCost);
             }
-            else
+            else if (PI.IsFull())
             {
                 Debug.Log("Your inventory is full");
+            }
+            else
+            {
+                Debug.Log("You don't have enough coin");
             }
         }
     }
