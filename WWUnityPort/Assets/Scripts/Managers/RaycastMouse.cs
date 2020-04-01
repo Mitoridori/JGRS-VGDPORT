@@ -6,8 +6,8 @@ public class RaycastMouse : MonoBehaviour
 {
     public Texture2D iconArrow;
     public Vector2 arrowRegPoint;
-    public Texture2D iconAttack;
-    public Vector2 attackingRegPoint;
+    public Texture2D iconGather;
+    public Vector2 gatheringRegPoint;
     public Texture2D iconTalk;
     public Vector2 talkRegPoint;
     public Texture2D iconInteract;
@@ -44,9 +44,9 @@ public class RaycastMouse : MonoBehaviour
         {
             switch (hit.collider.tag)
             {
-                case "Enemy":
-                    mouseTex = iconAttack;
-                    mouseReg = attackingRegPoint;
+                case "Collectible":
+                    mouseTex = iconGather;
+                    mouseReg = gatheringRegPoint;
                     break;
 
                 case "NPCTalk":

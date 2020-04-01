@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCollectible : MonoBehaviour, IQuestID
+public class BaseCollectible : MonoBehaviour, IQuestID, IInteractable
 {
     public string ItemID;
     public int ResetTime;
 
-    public Item item;
-    PlayerInventory PI;
+    public List<Item> item;
+    protected PlayerInventory PI;
     Player player;
 
 
@@ -23,11 +23,11 @@ public class BaseCollectible : MonoBehaviour, IQuestID
         player = FindObjectOfType<Player>();
 
     }
-    public void OnInteract()
+    public virtual void OnInteract()
     {
         if (!PI.IsFull())
         {
-            PI.Add(item);
+            PI.Add(item[0]);
 
             gameObject.SetActive(false);
 
@@ -38,32 +38,6 @@ public class BaseCollectible : MonoBehaviour, IQuestID
         else if (PI.IsFull())
         {
             Debug.Log("Your inventory is full");
-        }
-
-
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        PC = other.GetComponent<PlayerController>();
-
-        if (other.gameObject.tag == "Player")
-        {
-            if (!PI.IsFull())
-            {
-                PI.Add(item);
-
-                gameObject.SetActive(false);
-
-                Cleared();
-
-                Invoke("reset", ResetTime);
-            }
-            else if (PI.IsFull())
-            {
-                Debug.Log("Your inventory is full");
-            }
         }
     }
 

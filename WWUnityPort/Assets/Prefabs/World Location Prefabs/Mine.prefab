@@ -35,6 +35,7 @@ Transform:
   - {fileID: 1725981864811871570}
   - {fileID: 6747406601642260059}
   - {fileID: 6654499810063986208}
+  - {fileID: 8012429798923858235}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,6 +50,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SandRockWallBunch2K
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238213131515520584, guid: 85c4e8706774cb640a3c99ab6b077360,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 6322107869062654515, guid: 85c4e8706774cb640a3c99ab6b077360,
         type: 3}
@@ -113,6 +119,86 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9095154427597129835}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9095154427755263326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9095154428889315552}
+    m_Modifications:
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.880966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.98870325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4120665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9961079
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08814304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -190.114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796449477879143195, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_Name
+      value: SandRockBunch2K
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796449477879143195, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c92765decf45484e931f6a7cbeedda4, type: 3}
+--- !u!4 &8012429798923858235 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227693452933727333, guid: 5c92765decf45484e931f6a7cbeedda4,
+    type: 3}
+  m_PrefabInstance: {fileID: 9095154427755263326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9095154427835649271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,6 +210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueRockBunch2K (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557941398936171086, guid: e09ba204a54092d4ea8a2bc962c1d047,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 2477527980666233559, guid: e09ba204a54092d4ea8a2bc962c1d047,
         type: 3}
@@ -255,6 +346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedRockBunch2K
       objectReference: {fileID: 0}
+    - target: {fileID: 8611931751170313049, guid: a6976dad0c6ac44419caeb231d0cf9a0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6976dad0c6ac44419caeb231d0cf9a0, type: 3}
 --- !u!4 &1725981864811871570 stripped
@@ -274,6 +370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueRockBunch2K
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557941398936171086, guid: e09ba204a54092d4ea8a2bc962c1d047,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 2477527980666233559, guid: e09ba204a54092d4ea8a2bc962c1d047,
         type: 3}
@@ -405,6 +506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomRockBunch2K
       objectReference: {fileID: 0}
+    - target: {fileID: 7263916333618287320, guid: cd1acd48cb921f54fbfcd4d877b031db,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1acd48cb921f54fbfcd4d877b031db, type: 3}
 --- !u!4 &6747406603449855164 stripped
@@ -480,6 +586,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomRockBunch2K (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7263916333618287320, guid: cd1acd48cb921f54fbfcd4d877b031db,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1acd48cb921f54fbfcd4d877b031db, type: 3}
 --- !u!4 &6747406601642260059 stripped
@@ -499,6 +610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 2BlueRockBunch2K
+      objectReference: {fileID: 0}
+    - target: {fileID: 219986209041239610, guid: fee8a861f528c434f949a4d0f53a4988,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 6313785067628070407, guid: fee8a861f528c434f949a4d0f53a4988,
         type: 3}
@@ -629,6 +745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SandRockBunch2K
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796449477879143195, guid: 5c92765decf45484e931f6a7cbeedda4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collectible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c92765decf45484e931f6a7cbeedda4, type: 3}
