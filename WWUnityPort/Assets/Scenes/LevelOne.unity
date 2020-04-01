@@ -2212,8 +2212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 30
-  item: []
+  ResetTime: 120
+  item:
+  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
   hasRandom: 0
 --- !u!1 &518172448 stripped
 GameObject:
@@ -3214,7 +3215,7 @@ MonoBehaviour:
   ItemID: 
   ResetTime: 30
   item:
-  - {fileID: 11400000, guid: 804cec142d03b6e4eade9044b50608be, type: 2}
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
   hasRandom: 0
 --- !u!1001 &680727569
 PrefabInstance:
@@ -3874,8 +3875,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 30
-  item: []
+  ResetTime: 15
+  item:
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
   hasRandom: 0
 --- !u!1001 &758980804
 PrefabInstance:
@@ -4754,10 +4756,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 5
+  ResetTime: 45
   item:
-  - {fileID: 11400000, guid: 804cec142d03b6e4eade9044b50608be, type: 2}
-  - {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
   hasRandom: 1
 --- !u!1001 &955093559
 PrefabInstance:
@@ -5850,8 +5856,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 30
-  item: []
+  ResetTime: 15
+  item:
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
   hasRandom: 0
 --- !u!1 &1185780705 stripped
 GameObject:
@@ -6528,7 +6535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 
   ResetTime: 30
-  item: []
+  item:
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
   hasRandom: 0
 --- !u!1 &1322431233 stripped
 GameObject:
@@ -8200,9 +8208,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 30
-  item: []
-  hasRandom: 0
+  ResetTime: 45
+  item:
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
+  hasRandom: 1
 --- !u!1001 &1596717251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8436,7 +8450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 
   ResetTime: 30
-  item: []
+  item:
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
   hasRandom: 0
 --- !u!1001 &1625133744
 PrefabInstance:
@@ -10702,8 +10717,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 
-  ResetTime: 30
-  item: []
+  ResetTime: 15
+  item:
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
   hasRandom: 0
 --- !u!1001 &2004362215
 PrefabInstance:
