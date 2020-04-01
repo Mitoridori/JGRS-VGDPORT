@@ -106,13 +106,8 @@ public class InventoryUISlots : MonoBehaviour
     {
         if (item !=null && transform.root.Find("PlayerHUD/ShopUI").gameObject.activeInHierarchy)
         {
-
-
-            PI.Remove(item);
             player.AddCoins(item.ItemCost);
-
-
-
+            PI.Remove(item);
         }
     }
 
