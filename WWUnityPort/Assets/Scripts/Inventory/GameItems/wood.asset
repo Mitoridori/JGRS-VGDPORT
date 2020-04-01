@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15b8cdfd55fc23b4b9f240c20542a855, type: 3}
-  m_Name: New Item
+  m_Name: wood
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Wood
+  icon: {fileID: 21300000, guid: d65d95ca16518034fa82669a92d0b6e7, type: 3}
   showInInventory: 1
-  ItemCost: 0
-  details: 
+  ItemCost: 5
+  details: A stack of wood

@@ -27,8 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5361515129115773884}
-  m_LocalRotation: {x: -0.000000021855692, y: 0.00000004371139, z: 0.00000004371139,
-    w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.147657, y: 8.025318, z: -1.5813828}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -106,4 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: wood
-  ResetTime: 5
+  ResetTime: 60
+  item: {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}

@@ -102,6 +102,19 @@ public class InventoryUISlots : MonoBehaviour
         }
     }
 
+    public void SelltoStore()
+    {
+        if (item !=null && transform.root.Find("PlayerHUD/ShopUI").gameObject.activeInHierarchy)
+        {
+
+
+            PI.Remove(item);
+            player.AddCoins(item.ItemCost);
+
+
+
+        }
+    }
 
 
 }
