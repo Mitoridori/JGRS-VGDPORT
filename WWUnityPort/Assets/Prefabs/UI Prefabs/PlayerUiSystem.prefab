@@ -8659,27 +8659,27 @@ PrefabInstance:
     - target: {fileID: 733603067427051893, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 733603067427051893, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 733603067427051893, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 733603067427051893, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 733603067427051893, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1266205964917307417, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
@@ -8788,34 +8788,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8450533133887968290}
-    - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Close
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2181581026505762473, guid: 465bc5182d06a8941bd44f3f57d8550a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5611948514144313641, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_Name
@@ -8829,27 +8804,27 @@ PrefabInstance:
     - target: {fileID: 7948099268642544816, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7948099268642544816, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7948099268642544816, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7948099268642544816, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7948099268642544816, guid: 465bc5182d06a8941bd44f3f57d8550a,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465bc5182d06a8941bd44f3f57d8550a, type: 3}

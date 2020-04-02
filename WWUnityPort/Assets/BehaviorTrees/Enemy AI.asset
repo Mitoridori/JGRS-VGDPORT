@@ -100,7 +100,7 @@ MonoBehaviour:
     \       <outputValues>\r\n          <entry name=\"foundGameObject\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"True\" blackboard=\"foundGameObject\" />\r\n        </outputValues>\r\n
     \     </outputParams>\r\n      <localParams />\r\n    </ActionNode>\r\n    <ConditionEvalNode
-    id=\"23\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\" name=\"Perception/IsTargetClose\">\r\n
+    id=\"23\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\" name=\"Perception/IsTargetClose\">\r\n
     \     <inputParams>\r\n        <inputValues>\r\n          <entry name=\"target\"
     type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"foundGameObject\"
     />\r\n          <entry name=\"closeDistance\" type=\"System.Single\" isBlackboard=\"False\"
