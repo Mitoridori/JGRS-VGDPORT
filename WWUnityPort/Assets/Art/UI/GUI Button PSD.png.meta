@@ -91,12 +91,12 @@ TextureImporter:
       name: GUI Button PSD_0
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1182
+        x: 231
+        y: 1209
         width: 1231
         height: 1271
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -111,12 +111,12 @@ TextureImporter:
       name: GUI Button PSD_1
       rect:
         serializedVersion: 2
-        x: 2208
-        y: 1338
-        width: 981
-        height: 965
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2084
+        y: 1282
+        width: 1231
+        height: 1173
+      alignment: 9
+      pivot: {x: 0.50504225, y: 0.48798132}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,12 +131,12 @@ TextureImporter:
       name: GUI Button PSD_2
       rect:
         serializedVersion: 2
-        x: 382
-        y: 319
-        width: 881
-        height: 558
+        x: 196
+        y: 0
+        width: 1231
+        height: 1271
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: GUI Button PSD_3
       rect:
         serializedVersion: 2
-        x: 2256
-        y: 314
-        width: 933
-        height: 690
+        x: 2095
+        y: 16
+        width: 1231
+        height: 1271
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
