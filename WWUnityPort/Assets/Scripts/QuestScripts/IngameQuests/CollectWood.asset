@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   player: {fileID: 0}
+  PI: {fileID: 0}
   QuestName: CollectWood
   Prereq1: NULL
   Prereq2: NULL
   Description: Collect 5 peices of wood
   NPCID: wood
+  QuestItems:
+  - {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}
   TurnInNPCName: Doozy
   RequiredAmount: 5
   ExperenceReward: 10

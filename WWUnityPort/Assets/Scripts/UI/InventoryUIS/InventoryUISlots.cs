@@ -16,6 +16,7 @@ public class InventoryUISlots : MonoBehaviour
     PlayerInventory PI;
     Player player;
     ErrorMessage EM;
+    Item Bitem;
 
 
     private void Awake()
@@ -31,7 +32,6 @@ public class InventoryUISlots : MonoBehaviour
     public void AddItem(Item newItem)
     {
         item = newItem;
-
         icon.sprite = item.icon;
         icon.enabled = true;
         removeButton.interactable = true;
@@ -41,7 +41,6 @@ public class InventoryUISlots : MonoBehaviour
     public void ClearSlot()
     {
         item = null;
-
         icon.sprite = null;
         icon.enabled = false;
         removeButton.interactable = false;
@@ -64,6 +63,8 @@ public class InventoryUISlots : MonoBehaviour
 
     public void ItemDetails()
     {
+        transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/BuyButton").GetComponent<Button>().onClick.RemoveAllListeners();
+
         if (item != null)
         {
             //Item Name
@@ -84,9 +85,11 @@ public class InventoryUISlots : MonoBehaviour
         }           
     }
 
+
+
     public void SellItem()
     {
-        if (item != null)
+         if (item != null)
         {
             if (!PI.IsFull() && player.GetPlayerCoins() >= item.ItemCost)
             {
