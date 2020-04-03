@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Boulder
   - Collectible
+  - QuitWindow
   layers:
   - Default
   - TransparentFX
