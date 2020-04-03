@@ -13,11 +13,6 @@ public class ToggleColor : MonoBehaviour
     [SerializeField]
     private Material available;
 
-    private void Update()
-    {
-        gameObject.transform.Rotate(0, 360, 0);
-    }
-
     public void SetIconMaterialTaken()
     {
         foreach (MeshRenderer renderer in meshRenderers)

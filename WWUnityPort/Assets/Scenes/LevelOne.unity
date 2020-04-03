@@ -13295,20 +13295,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
-      propertyPath: QuestList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
-        type: 3}
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
-    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
-        type: 3}
-      propertyPath: QuestList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 098cd11c590ea2a4e83a1f561c0e7727,
-        type: 2}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13368,11 +13357,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TinyTina
-      objectReference: {fileID: 0}
-    - target: {fileID: 3351068817465563914, guid: bcce5ccf0f2488b4c99b71c640e74232,
-        type: 3}
-      propertyPath: m_TagString
-      value: QuestNPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcce5ccf0f2488b4c99b71c640e74232, type: 3}

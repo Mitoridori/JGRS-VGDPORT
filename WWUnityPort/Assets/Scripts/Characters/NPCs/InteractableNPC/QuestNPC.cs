@@ -19,7 +19,7 @@ public class QuestNPC : InterNPC
     {
         QM = FindObjectOfType<QuestManager>();
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
-        
+        questIndicator.SetActive(false);
     }
 
     public override void Update()
