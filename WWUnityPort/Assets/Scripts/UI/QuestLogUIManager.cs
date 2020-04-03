@@ -20,22 +20,43 @@ public class QuestLogUIManager : MonoBehaviour
 
     bool toggle = false;
 
+    public List<GameObject> QuestList = new List<GameObject>();
+    public List<QuestNPC> QuestNPC = new List<QuestNPC>();
+
     QuestNPC QG;
 
     void Start()
     {
-        QG = FindObjectOfType<QuestNPC>();
+        //QG = FindObjectOfType<QuestNPC>();
 
         NoQuestFound();
+
+        //find all quest givers
+        QuestList.AddRange(GameObject.FindGameObjectsWithTag("QuestNPC"));
+        for (int i = 0; i < QuestList.Count; i++)
+        {
+            if (QuestList[i].GetComponent<QuestNPC>())
+            {
+                QuestNPC.Add(QuestList[i].GetComponent<QuestNPC>());
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (QG && QG.AssignedQuest)
-            QG.Quest.TrackingQuest();
-        else
-            NoQuestFound();
+        for (int i = 0; i < QuestNPC.Count; i++)
+        {
+            QG = QuestNPC[i];
+
+            if(QG && QG.HasQuests && QG.AssignedQuest)
+            {
+                QG.Quest.TrackingQuest();
+                break;
+            }
+            else 
+                NoQuestFound();
+        }      
     }
 
     void NoQuestFound()

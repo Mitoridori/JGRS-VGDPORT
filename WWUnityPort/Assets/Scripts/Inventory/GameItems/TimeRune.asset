@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15b8cdfd55fc23b4b9f240c20542a855, type: 3}
-  m_Name: ItemOne
+  m_Name: TimeRune
   m_EditorClassIdentifier: 
-  name: Flower
-  icon: {fileID: 21300000, guid: 016005a4413b87e41874cce8ea19eb89, type: 3}
+  name: TimeRune
+  icon: {fileID: 21300000, guid: b6ffe5de4aa93a14abed36c3d15840bc, type: 3}
   showInInventory: 1
-  ItemCost: 5
-  details: Beautiful Flowers from the wildes.
+  ItemCost: 0
+  details: This Rune holds the ability to change time itself.

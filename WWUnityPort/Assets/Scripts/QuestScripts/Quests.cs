@@ -25,6 +25,7 @@ public class Quests : ScriptableObject
     public bool NPCKill { get; set; }
     protected GameObject NPCtoKill;
     protected GameObject NPCHandIn;
+    protected GameObject NPCStart;
 
     public bool SecondNPC { get; set; }
 
@@ -36,8 +37,8 @@ public class Quests : ScriptableObject
     public string NPCID;
     public List<Item> QuestItems = new List<Item>();
     public string TurnInNPCName;
-
     public int RequiredAmount;
+    public List<Item> RewardItems = new List<Item>();
     public int ExperenceReward = 0;
     public int CoinReward = 0;
     //public variable for item reward needed;
@@ -148,13 +149,17 @@ public class Quests : ScriptableObject
     //DESCRIPTION : gives the player the reward for the quest
     public virtual void GiveReward()
     {
+        PI = FindObjectOfType<PlayerInventory>();
         for (int i = 0; i < QuestItems.Count; i++)
         {
             for (int j = 0; j < RequiredAmount; j++)
             {
-                PI = FindObjectOfType<PlayerInventory>();
                 PI.Remove(QuestItems[i]);
             }
+        }
+        for (int i = 0; i < RewardItems.Count; i++)
+        {
+            PI.Add(RewardItems[i]);
         }
 
         player = FindObjectOfType<Player>();
@@ -166,6 +171,6 @@ public class Quests : ScriptableObject
         Debug.Log("Quest Reward Given.");
     }
 
-
+    public virtual void ChangeHasQuests() { }
 
 }

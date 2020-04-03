@@ -61,12 +61,14 @@ public class QuestNPC : InterNPC
             }
             else if (Quest.Completed)
             {
+                Quest.ChangeHasQuests();
                 Quest.SecondNPCCompletedText();
                 Quest.GiveReward();
                 QM.addToCQNList(Quest.QuestName);
                 Quest.isActive = false;
                 QM.RemoveActiveQuest(Quest);
                 isSecondaryNPC = false;
+                
             }
         }
     }

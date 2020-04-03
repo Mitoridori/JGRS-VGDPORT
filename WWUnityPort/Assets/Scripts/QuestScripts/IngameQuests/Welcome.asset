@@ -23,6 +23,7 @@ MonoBehaviour:
   QuestItems: []
   TurnInNPCName: Doozy
   RequiredAmount: 1
+  RewardItems: []
   ExperenceReward: 10
   CoinReward: 10
   QuestObjectives: Go into the town and find a man named Doozy
@@ -38,5 +39,7 @@ MonoBehaviour:
   SecondCompletedText: 'Ahh yes, the rune, I do have one of those, I''m not sure where
     I put it, maybe you can help me a little and I''ll remember. '
   RewardsList: ' 10'
+  StartNPC: TinyTina
   NPCHandInName: Doozy
-  CNPC: []
+  CNPC:
+  - Doozy

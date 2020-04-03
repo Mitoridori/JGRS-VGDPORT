@@ -23,11 +23,14 @@ MonoBehaviour:
   QuestItems: []
   TurnInNPCName: Doozy
   RequiredAmount: 1
+  RewardItems:
+  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
   ExperenceReward: 10
   CoinReward: 10
   QuestObjectives: Take Doozy to his old home.
-  StartQuestText: 'Now can you please take me to the old homestead? I''d love to see
-    it again. Its just down the path by the large mountain. '
+  StartQuestText: Now can you please take me to the old homestead? I'd love to see
+    it again. Its just down the path by the large mountain. Its also where I hid the
+    rune, I didn't want anyone to take it.
   TrackingQuestText: Take Doozy to his old home.
   InprogressQuestText: 'I know you can do it! Just down the path by the large mountain. '
   CompletedQuestText: Thank you so much, It was a beautiful sight to see.

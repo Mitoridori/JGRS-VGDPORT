@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TurnInQuests : Quests
 {
+    public string StartNPC;
     public string NPCHandInName;
     public List<string> CNPC = new List<string>();
 
@@ -24,13 +25,29 @@ public class TurnInQuests : Quests
         }
         for (int i = 0; i < CNPC.Count; i++)
         {
-            GameObject NPC;
-            NPC = GameObject.Find(CNPC[i]);
-            if (NPC)
-            {
-                NPC.GetComponent<QuestNPC>().HasQuests = true;
-            }
+            //GameObject NPC;
+            //NPC = GameObject.Find(CNPC[i]);
+            //if (NPC)
+            //{
+            //    NPC.GetComponent<QuestNPC>().HasQuests = true;
+            //}
         }
 
     }
+
+    public override void ChangeHasQuests()
+    {
+        NPCHandIn = GameObject.Find(NPCHandInName);
+        if (NPCHandIn)
+        {
+            NPCHandIn.GetComponent<QuestNPC>().HasQuests = true;
+        }
+        NPCStart = GameObject.Find(StartNPC);
+        if (NPCStart)
+        {
+            NPCStart.GetComponent<QuestNPC>().HasQuests = false;
+        }
+    }
+
+
 }
