@@ -19,7 +19,7 @@ MonoBehaviour:
   Prereq1: NULL
   Prereq2: NULL
   Description: Welcome to Wonderland
-  NPCID: TinyTina
+  NPCID: Doozy
   QuestItems: []
   TurnInNPCName: Doozy
   RequiredAmount: 1
@@ -37,6 +37,6 @@ MonoBehaviour:
   SecondInprogressText: Humm who are you, who sent you?
   SecondCompletedText: 'Ahh yes, the rune, I do have one of those, I''m not sure where
     I put it, maybe you can help me a little and I''ll remember. '
-  RewardsList: 
+  RewardsList: ' 10'
   NPCHandInName: Doozy
   CNPC: []

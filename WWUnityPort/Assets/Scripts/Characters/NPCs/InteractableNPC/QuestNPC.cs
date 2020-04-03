@@ -52,6 +52,7 @@ public class QuestNPC : InterNPC
             if (!Quest.Completed)
             {
                 Quest.SNPCInprogressText();
+                Cleared();
             }
             else if (Quest.Completed)
             {

@@ -2135,6 +2135,11 @@ PrefabInstance:
       propertyPath: isSecondaryNPC
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3746343617150078434, guid: 2b0d310b246df5e43a9faebee701e017,
+        type: 3}
+      propertyPath: CharacterName
+      value: Doozy
+      objectReference: {fileID: 0}
     - target: {fileID: 3746343617331014431, guid: 2b0d310b246df5e43a9faebee701e017,
         type: 3}
       propertyPath: m_Name
@@ -13284,6 +13289,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 1444392302}
+    - target: {fileID: 1077252067332432521, guid: 1a966bbe2c97cb04aaa633daa8281e88,
+        type: 3}
+      propertyPath: CharacterName
+      value: ShopKeeper
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a966bbe2c97cb04aaa633daa8281e88, type: 3}
 --- !u!1001 &3351068817977031380
@@ -13298,6 +13308,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
+    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: CharacterName
+      value: TinyTina
+      objectReference: {fileID: 0}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x
