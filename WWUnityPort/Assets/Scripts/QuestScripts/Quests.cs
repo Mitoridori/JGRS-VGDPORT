@@ -54,7 +54,9 @@ public class Quests : ScriptableObject
     [TextArea(3, 10)]
     public string CompletedQuestText;
 
+    [TextArea(3, 10)]
     public string SecondInprogressText;
+    [TextArea(3, 10)]
     public string SecondCompletedText;
 
     public string RewardsList;
@@ -120,6 +122,25 @@ public class Quests : ScriptableObject
             QUIM.NPCBoxTwo.text = CompletedQuestText;
         }
         Debug.Log("Completed Text" + QuestName);
+    }
+
+    public virtual void SNPCInprogressText()
+    {
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.NPCBoxTwo.text = SecondInprogressText;
+        }
+
+    }
+
+    public virtual void SecondNPCCompletedText()
+    {
+        QUIM = FindObjectOfType<QuestLogUIManager>();
+        if (QUIM)
+        {
+            QUIM.NPCBoxTwo.text = SecondCompletedText;
+        }
     }
 
 

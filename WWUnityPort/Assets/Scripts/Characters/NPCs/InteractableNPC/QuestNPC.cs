@@ -27,17 +27,36 @@ public class QuestNPC : InterNPC
     public override void Interact()
     {
         isActive = !isActive;
-        if (!AssignedQuest && !Helped)
+        if (!isSecondaryNPC)
         {
-            AssignQuest();
+                if (!AssignedQuest && !Helped)
+            {
+                AssignQuest();
+            }
+            else if (AssignedQuest && !Helped)
+            {
+                CheckQuest();
+            }
+            else
+            {
+                NextQuest();
+            }
         }
-        else if (AssignedQuest && !Helped)
+        else if (isSecondaryNPC)
         {
-            CheckQuest();
-        }
-        else
-        {
-            NextQuest();
+            if (!Quest.Completed)
+            {
+                Quest.SNPCInprogressText();
+            }
+            else if (Quest.Completed)
+            {
+                Quest.SecondNPCCompletedText();
+                Quest.GiveReward();
+                QM.addToCQNList(Quest.QuestName);
+                Quest.isActive = false;
+                QM.RemoveActiveQuest(Quest);
+                isSecondaryNPC = false;
+            }
         }
     }
 
@@ -73,7 +92,7 @@ public class QuestNPC : InterNPC
     //DESCRIPTION : Checking to see if quest is done or not and assigning the correct dialoge/action
     void CheckQuest()
     {
-        if (Quest.Completed)
+        if (Quest.Completed&& !Quest.SecondNPC)
         {
             Quest.GiveReward();
             Helped = true;
@@ -83,6 +102,10 @@ public class QuestNPC : InterNPC
             Quest.isActive = false;
             QM.RemoveActiveQuest(Quest);
 
+        }
+        else if (Quest.Completed && Quest.SecondNPC)
+        {
+            Quest.CompletedText();
         }
         else
         {

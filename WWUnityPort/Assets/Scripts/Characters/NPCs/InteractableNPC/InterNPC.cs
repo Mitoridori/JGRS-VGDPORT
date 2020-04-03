@@ -13,6 +13,7 @@ public class InterNPC : BaseCharacter, IInteractable
     protected bool CanWalk;
     public GameObject InteractiveTextBox;
     protected bool isActive = false;
+    public bool isSecondaryNPC;
 
 
     protected Player player;

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f25ab27c968e4246ab672ac3545fa09, type: 3}
+  m_Name: Welcome
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: Welcome
+  Prereq1: NULL
+  Prereq2: NULL
+  Description: Welcome to Wonderland
+  NPCID: TinyTina
+  QuestItems: []
+  TurnInNPCName: Doozy
+  RequiredAmount: 1
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Go into the town and find a man named Doozy
+  StartQuestText: Welcome, you came in with such a fright, I was worried you might
+    have not surrivived the landing, it seems if you wish to return home we are going
+    to need to rebuild this portal.  First find Doozy, he'll have a rune that will
+    help us rebuild.
+  TrackingQuestText: Find Doozy in the town.
+  InprogressQuestText: 'Have you found him? he''ll have the rune we need to fix the
+    portal. '
+  CompletedQuestText: 'You found him? then see if you can help to get the rune. '
+  SecondInprogressText: Humm who are you, who sent you?
+  SecondCompletedText: 'Ahh yes, the rune, I do have one of those, I''m not sure where
+    I put it, maybe you can help me a little and I''ll remember. '
+  RewardsList: 
+  NPCHandInName: Doozy
+  CNPC: []
