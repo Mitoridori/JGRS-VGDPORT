@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class InterNPC : BaseCharacter, IInteractable
+public class InterNPC : BaseCharacter, IInteractable, IQuestID
 {
-
+    public string CharacterName;
     protected BehaviorExecutor executor;
     private Animator animator;
     protected string currentText;
@@ -14,6 +14,7 @@ public class InterNPC : BaseCharacter, IInteractable
     public GameObject InteractiveTextBox;
     protected bool isActive = false;
     public bool isSecondaryNPC;
+    public string ID { get; set; }
 
 
     protected Player player;
@@ -30,6 +31,8 @@ public class InterNPC : BaseCharacter, IInteractable
         agent = GetComponent<NavMeshAgent>();
 
         player = FindObjectOfType<Player>();
+
+        ID = CharacterName;
 
         if (executor)
             executor.enabled = false;
@@ -116,5 +119,10 @@ public class InterNPC : BaseCharacter, IInteractable
     public bool ToggleIsActive()
     {
         return isActive = !isActive;
+    }
+
+    public void Cleared()
+    {
+        QuestEvents.ItemCleared(this);
     }
 }
