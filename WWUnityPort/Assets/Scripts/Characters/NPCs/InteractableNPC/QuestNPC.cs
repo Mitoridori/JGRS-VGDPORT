@@ -12,16 +12,22 @@ public class QuestNPC : InterNPC
     public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
     private int i = 0; //quest counter
 
+
+    GameObject questIndicator;
     
     void Awake()
     {
         QM = FindObjectOfType<QuestManager>();
+        questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
+        questIndicator.SetActive(false);
         
     }
 
     public override void Update()
     {
         Follow();
+        if (!AssignedQuest && !Helped && questIndicator.activeInHierarchy)
+            questIndicator.GetComponent<ToggleColor>().SetIconMaterialAvailable();
     }
 
     public override void Interact()
@@ -29,7 +35,7 @@ public class QuestNPC : InterNPC
         isActive = !isActive;
         if (!isSecondaryNPC)
         {
-                if (!AssignedQuest && !Helped)
+            if (!AssignedQuest && !Helped)
             {
                 AssignQuest();
             }
@@ -64,8 +70,6 @@ public class QuestNPC : InterNPC
     //DESCRIPTION : Assigns the quest to the player if needed
     void AssignQuest()
     {
-
-
         //checking to see if valid 
 
         for (int i = 0; i < QuestList.Count; i++)
@@ -81,6 +85,8 @@ public class QuestNPC : InterNPC
                     Quest.StartText();
                     Quest.isActive = true;
                     QM.AddActiveQuests(Quest);
+                    if (questIndicator)
+                        questIndicator.GetComponent<ToggleColor>().SetIconMaterialTaken();
                     return;
                 }
             }
@@ -136,6 +142,7 @@ public class QuestNPC : InterNPC
     void NoMoreQuest()
     {
         currentText = "Thanks for you Help";
+        questIndicator.SetActive(false);
         Debug.Log("No Quest Got");
     }
 
