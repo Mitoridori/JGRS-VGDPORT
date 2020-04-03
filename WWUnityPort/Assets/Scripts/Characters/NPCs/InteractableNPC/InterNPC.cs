@@ -48,6 +48,7 @@ public class InterNPC : BaseCharacter, IInteractable
 
     public void OnInteract()
     {
+        if(player)
         if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
             Interact();
