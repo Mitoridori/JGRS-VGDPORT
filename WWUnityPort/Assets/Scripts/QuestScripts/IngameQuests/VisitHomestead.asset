@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   player: {fileID: 0}
+  PI: {fileID: 0}
   QuestName: VisitHomestead
-  Prereq1: NULL
+  Prereq1: CollectWood
   Prereq2: NULL
   Description: Take NPC to the homestead
   NPCID: HomeStead
+  QuestItems: []
   TurnInNPCName: Doozy
   RequiredAmount: 1
   ExperenceReward: 10

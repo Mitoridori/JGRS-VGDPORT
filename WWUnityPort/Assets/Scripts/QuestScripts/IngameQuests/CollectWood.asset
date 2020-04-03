@@ -16,7 +16,7 @@ MonoBehaviour:
   player: {fileID: 0}
   PI: {fileID: 0}
   QuestName: CollectWood
-  Prereq1: NULL
+  Prereq1: Welcome
   Prereq2: NULL
   Description: Collect 5 peices of wood
   NPCID: wood

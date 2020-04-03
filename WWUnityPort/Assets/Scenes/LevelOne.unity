@@ -13313,6 +13313,11 @@ PrefabInstance:
       propertyPath: CharacterName
       value: TinyTina
       objectReference: {fileID: 0}
+    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: HasQuests
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x

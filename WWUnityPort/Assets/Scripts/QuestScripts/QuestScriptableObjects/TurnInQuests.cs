@@ -28,7 +28,7 @@ public class TurnInQuests : Quests
             NPC = GameObject.Find(CNPC[i]);
             if (NPC)
             {
-                //NPC.GetComponent<ConversationNpc>().hasBeenTalkedTo = false;
+                NPC.GetComponent<QuestNPC>().HasQuests = true;
             }
         }
 

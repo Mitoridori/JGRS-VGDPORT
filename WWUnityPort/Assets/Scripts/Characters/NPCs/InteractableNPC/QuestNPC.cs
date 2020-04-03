@@ -11,7 +11,7 @@ public class QuestNPC : InterNPC
     public bool Helped { get; set; } //quest to hand in
     public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
     private int i = 0; //quest counter
-
+    public bool HasQuests;
 
     GameObject questIndicator;
     
@@ -19,12 +19,17 @@ public class QuestNPC : InterNPC
     {
         QM = FindObjectOfType<QuestManager>();
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
-        questIndicator.SetActive(false);
+        if(!HasQuests)
+            questIndicator.SetActive(false);
+        else
+            questIndicator.SetActive(true);
     }
 
     public override void Update()
     {
         Follow();
+        if (HasQuests)
+            questIndicator.SetActive(true);
         if (!AssignedQuest && !Helped && questIndicator.activeInHierarchy)
             questIndicator.GetComponent<ToggleColor>().SetIconMaterialAvailable();
     }
