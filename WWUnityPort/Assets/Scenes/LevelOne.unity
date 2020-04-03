@@ -2130,6 +2130,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
+    - target: {fileID: 3746343617150078434, guid: 2b0d310b246df5e43a9faebee701e017,
+        type: 3}
+      propertyPath: isSecondaryNPC
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3746343617331014431, guid: 2b0d310b246df5e43a9faebee701e017,
         type: 3}
       propertyPath: m_Name
@@ -6721,7 +6726,7 @@ PrefabInstance:
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 283.38406
+      value: 403.2
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
@@ -6731,27 +6736,27 @@ PrefabInstance:
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 232.60623
+      value: 422.7
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.9854031
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.17023708
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
@@ -6766,7 +6771,7 @@ PrefabInstance:
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 160.397
       objectReference: {fileID: 0}
     - target: {fileID: 4980377012537046638, guid: 15a9f8834530f7b4688b8e7a28c9cd94,
         type: 3}
@@ -13317,7 +13322,7 @@ PrefabInstance:
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 416.35648
+      value: 419.74
       objectReference: {fileID: 0}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
@@ -13363,6 +13368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TinyTina
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351068817465563914, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcce5ccf0f2488b4c99b71c640e74232, type: 3}
