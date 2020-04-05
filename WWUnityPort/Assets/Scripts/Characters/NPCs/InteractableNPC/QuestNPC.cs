@@ -68,7 +68,9 @@ public class QuestNPC : InterNPC
                 Quest.isActive = false;
                 QM.RemoveActiveQuest(Quest);
                 isSecondaryNPC = false;
-                
+                Helped = true;
+                AssignedQuest = false;
+
             }
         }
     }
@@ -130,7 +132,6 @@ public class QuestNPC : InterNPC
     //DESCRIPTION : Calls the next quest in the line when the player revisits the questGiver
     void NextQuest()
     {
-        i++;
         if (i >= QuestList.Count)
         {
             NoMoreQuest();
@@ -140,7 +141,7 @@ public class QuestNPC : InterNPC
             Helped = false;
             AssignedQuest = false;
             AssignQuest();
-
+            i++;
         }
     }
 

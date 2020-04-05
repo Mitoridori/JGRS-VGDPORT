@@ -24,7 +24,7 @@ MonoBehaviour:
   TurnInNPCName: Doozy
   RequiredAmount: 1
   RewardItems:
-  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
+  - {fileID: 11400000, guid: 3f26b6b82301a8443996db38f922c07e, type: 2}
   ExperenceReward: 10
   CoinReward: 10
   QuestObjectives: Take Doozy to his old home.

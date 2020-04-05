@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbd7c2b5f87c19409f654ed3f253515, type: 3}
+  m_Name: GetStone
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: GetStone
+  Prereq1: ReturntoTIna
+  Prereq2: NULL
+  Description: Gather 10 peices of stone
+  NPCID: ore
+  QuestItems:
+  - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
+  - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
+  - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
+  TurnInNPCName: TinyTina
+  RequiredAmount: 10
+  RewardItems: []
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Gather up Stone
+  StartQuestText: Now we have the rune, we need to get some new stones to repair this
+    arch
+  TrackingQuestText: Gather up stone
+  InprogressQuestText: Have you gotten all the stone yet?
+  CompletedQuestText: 'Wonderful now we can work on actually repairing the arch. '
+  SecondInprogressText: 
+  SecondCompletedText: 
+  RewardsList: ' 10'
+  CNPC: []

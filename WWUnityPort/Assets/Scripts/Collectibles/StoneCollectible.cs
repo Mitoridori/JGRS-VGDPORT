@@ -19,7 +19,7 @@ public class StoneCollectible : BaseCollectible
             {
                 PI.Add(item[0]);
             }
-
+            Cleared();
             gameObject.SetActive(false);
 
             Invoke("reset", ResetTime);

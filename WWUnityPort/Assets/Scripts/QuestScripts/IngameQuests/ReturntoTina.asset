@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f25ab27c968e4246ab672ac3545fa09, type: 3}
+  m_Name: ReturntoTina
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: ReturntoTina
+  Prereq1: VisitHomestead
+  Prereq2: NULL
+  Description: Go back to Tina
+  NPCID: TinyTina
+  QuestItems:
+  - {fileID: 11400000, guid: 3f26b6b82301a8443996db38f922c07e, type: 2}
+  TurnInNPCName: TinyTina
+  RequiredAmount: 1
+  RewardItems: []
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Return to Tiny Tina
+  StartQuestText: 'Thank you again for your help, now you have the Rune, you better
+    head back to see Tiny Tina again. '
+  TrackingQuestText: Return to Tiny Tina
+  InprogressQuestText: Why haven't you gone and viisited her yet?
+  CompletedQuestText: Oh good, I'm glad to see you've gotten the rune, now for the
+    next thing on the list.
+  SecondInprogressText: Did you get it? did you get the rune?
+  SecondCompletedText: Oh good, I'm glad to see you've gotten the rune, now for the
+    next thing on the list.
+  RewardsList: ' 10'
+  StartNPC: Doozy
+  NPCHandInName: TinyTina
+  CNPC: []
