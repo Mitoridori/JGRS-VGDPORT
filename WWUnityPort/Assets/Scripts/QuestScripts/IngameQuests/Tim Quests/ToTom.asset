@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f25ab27c968e4246ab672ac3545fa09, type: 3}
+  m_Name: ToTom
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: ToTom
+  Prereq1: FindAnimals
+  Prereq2: NULL
+  Description: Return to Tom
+  NPCID: Tom
+  QuestItems:
+  - {fileID: 11400000, guid: 2380acd684aceb841be9d4eb546e09b9, type: 2}
+  RequiredAmount: 1
+  RewardItems: []
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Return to Tom with the milk
+  StartQuestText: Thank you for your help, you can take the milk and return to Tom.
+  TrackingQuestText: Return the milk to Tom
+  InprogressQuestText: Don't forget to take the milk to Tom
+  CompletedQuestText: 'Thanks for your help with the milk. '
+  SecondInprogressText: Did you get it?
+  SecondCompletedText: 'Thanks for your help with the milk. '
+  RewardsList: 
+  StartNPC: FarmerTim
+  NPCHandInName: Tom
+  TurnOffShop: []

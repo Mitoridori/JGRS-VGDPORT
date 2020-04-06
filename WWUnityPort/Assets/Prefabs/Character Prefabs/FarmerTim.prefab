@@ -472,6 +472,7 @@ MonoBehaviour:
   isSecondaryNPC: 0
   QuestList:
   - {fileID: 11400000, guid: 7a190fc15722c7749a8b224f25c2eac3, type: 2}
+  - {fileID: 11400000, guid: 97d45bfeb2b4c874b9d80eac60911dd9, type: 2}
   HasQuests: 0
 --- !u!1 &2198691643856602298
 GameObject:

@@ -15,24 +15,26 @@ MonoBehaviour:
   QUIM: {fileID: 0}
   player: {fileID: 0}
   PI: {fileID: 0}
-  QuestName: 
-  Prereq1: 
-  Prereq2: 
-  Description: 
-  NPCID: 
+  QuestName: GototheFarm
+  Prereq1: GototheShop
+  Prereq2: NULL
+  Description: Go find Farmer Tim
+  NPCID: FarmerTim
   QuestItems: []
-  RequiredAmount: 0
-  RewardItems: []
-  ExperenceReward: 0
-  CoinReward: 0
-  QuestObjectives: 
-  StartQuestText: 
-  TrackingQuestText: 
-  InprogressQuestText: 
-  CompletedQuestText: 
-  SecondInprogressText: 
-  SecondCompletedText: 
-  RewardsList: 
-  StartNPC: 
-  NPCHandInName: 
+  RequiredAmount: 1
+  RewardItems:
+  - {fileID: 11400000, guid: 2380acd684aceb841be9d4eb546e09b9, type: 2}
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Find Farmer Tim
+  StartQuestText: I can help you out, but first I need some help, I need to get some
+    milk for my boss, can you visit the farmer for milk?
+  TrackingQuestText: Go to the Farm
+  InprogressQuestText: Have you found him? just follow this road out of town.
+  CompletedQuestText: Yes, I have the milk delivery, but I need help first.
+  SecondInprogressText: Humm who's there?
+  SecondCompletedText: Yes, I have the milk delivery, but I need help first.
+  RewardsList: ' 10'
+  StartNPC: Tom
+  NPCHandInName: FarmerTim
   TurnOffShop: []

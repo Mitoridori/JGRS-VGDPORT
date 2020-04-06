@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f25ab27c968e4246ab672ac3545fa09, type: 3}
+  m_Name: ToTina
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: ToTina
+  Prereq1: ToTom
+  Prereq2: NULL
+  Description: Return to Tina
+  NPCID: TinyTina
+  QuestItems:
+  - {fileID: 11400000, guid: 6f161842303e3504797ea79b0c4fccd8, type: 2}
+  RequiredAmount: 1
+  RewardItems: []
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Return to Tiny Tina
+  StartQuestText: You have the milk! This is great, here is your grout
+  TrackingQuestText: 'Return to Tiny Tina with the grout. '
+  InprogressQuestText: Have you gotten back to Tiny Tina?
+  CompletedQuestText: 'You have the grout! Wonderful onto the next thing. '
+  SecondInprogressText: Did you get the grout?
+  SecondCompletedText: 'You have the grout! Wonderful onto the next thing. '
+  RewardsList: 
+  StartNPC: Tom
+  NPCHandInName: TinyTina
+  TurnOffShop: []
