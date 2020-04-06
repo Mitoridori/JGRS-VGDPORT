@@ -803,12 +803,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
+  m_fontSize: 15
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 18
+  m_fontSizeMin: 3
+  m_fontSizeMax: 15
   m_fontStyle: 0
   m_textAlignment: 257
   m_characterSpacing: 0
@@ -3214,7 +3214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4374251608601099604
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4299,10 +4299,11 @@ MonoBehaviour:
   CoinText: {fileID: 1761630751803104450}
   ToggleButtonA: {fileID: 4554845975560282434}
   ToggleButtonB: {fileID: 4554845975560282434}
-  NPCBoxOne: {fileID: 8380518229135972165}
   NPCBoxTwo: {fileID: 2074386848874748783}
   InteractiveQuitButton: {fileID: 5725781457181742153}
   InteractiveBox: {fileID: 6022294774052593263}
+  QuestList: []
+  QuestNPC: []
 --- !u!114 &7629598819046686191
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -946,10 +946,14 @@ MonoBehaviour:
   jumpSpeed: 0
   walkSpeed: 0
   runSpeed: 0
+  nameText: {fileID: 0}
+  CharacterName: Tiny Tina
   InteractiveTextBox: {fileID: 0}
   isSecondaryNPC: 0
   QuestList:
   - {fileID: 11400000, guid: 098cd11c590ea2a4e83a1f561c0e7727, type: 2}
+  - {fileID: 11400000, guid: 9d2511b469d998f4f944b38f25abf3ae, type: 2}
+  HasQuests: 1
 --- !u!1 &3351068817465563916
 GameObject:
   m_ObjectHideFlags: 0

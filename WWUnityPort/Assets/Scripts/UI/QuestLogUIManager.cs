@@ -12,8 +12,6 @@ public class QuestLogUIManager : MonoBehaviour
     public GameObject ToggleButtonA;
     public GameObject ToggleButtonB;
 
-
-    public TextMeshProUGUI NPCBoxOne;
     public TextMeshProUGUI NPCBoxTwo;
     public GameObject InteractiveQuitButton;
     public GameObject InteractiveBox;

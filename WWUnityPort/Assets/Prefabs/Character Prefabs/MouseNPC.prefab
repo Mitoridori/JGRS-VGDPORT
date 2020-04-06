@@ -1980,7 +1980,10 @@ MonoBehaviour:
   jumpSpeed: 0
   walkSpeed: 0
   runSpeed: 0
+  nameText: {fileID: 0}
+  CharacterName: Mickey
   InteractiveTextBox: {fileID: 0}
+  isSecondaryNPC: 0
 --- !u!114 &1077252067332432535
 MonoBehaviour:
   m_ObjectHideFlags: 0

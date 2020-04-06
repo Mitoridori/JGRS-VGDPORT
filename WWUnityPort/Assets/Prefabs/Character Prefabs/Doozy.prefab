@@ -1016,6 +1016,7 @@ MonoBehaviour:
   jumpSpeed: 0
   walkSpeed: 0
   runSpeed: 0
+  nameText: {fileID: 0}
   CharacterName: Doozy
   InteractiveTextBox: {fileID: 0}
   isSecondaryNPC: 0

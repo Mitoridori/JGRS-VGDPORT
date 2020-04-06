@@ -36,6 +36,7 @@ public class QuestNPC : InterNPC
 
     public override void Interact()
     {
+        nameText.SetText(CharacterName);
         isActive = !isActive;
         if (!isSecondaryNPC)
         {

@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
 
 public class InterNPC : BaseCharacter, IInteractable, IQuestID
 {
+    public TextMeshProUGUI nameText;
+
     public string CharacterName;
     protected BehaviorExecutor executor;
     private Animator animator;
@@ -32,7 +35,7 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
 
         player = FindObjectOfType<Player>();
 
-        ID = CharacterName;
+        ID = gameObject.name;
 
         if (executor)
             executor.enabled = false;

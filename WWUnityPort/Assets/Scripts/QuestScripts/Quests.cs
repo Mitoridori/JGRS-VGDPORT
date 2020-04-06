@@ -36,7 +36,6 @@ public class Quests : ScriptableObject
     public string Description;
     public string NPCID;
     public List<Item> QuestItems = new List<Item>();
-    public string TurnInNPCName;
     public int RequiredAmount;
     public List<Item> RewardItems = new List<Item>();
     public int ExperenceReward = 0;
@@ -83,7 +82,6 @@ public class Quests : ScriptableObject
         QUIM = FindObjectOfType<QuestLogUIManager>();
         if (QUIM)
         {
-            QUIM.NPCBoxOne.text = TurnInNPCName;
             QUIM.NPCBoxTwo.text = StartQuestText;
         }
         Debug.Log("StartText " + QuestName);
