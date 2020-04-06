@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adbd7c2b5f87c19409f654ed3f253515, type: 3}
-  m_Name: New Quest
+  m_Name: FindAnimals
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   player: {fileID: 0}

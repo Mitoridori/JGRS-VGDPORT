@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Portal
+    uniqueID: 547566273
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

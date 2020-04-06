@@ -23,5 +23,4 @@ public class ShopNPC : InterNPC
     {
         //inventory.
     }
-
 }
