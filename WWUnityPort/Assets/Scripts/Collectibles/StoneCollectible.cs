@@ -15,7 +15,8 @@ public class StoneCollectible : BaseCollectible
             {
                 randomItem = Random.Range(0, item.Count);
                 PI.Add(item[randomItem]);
-            } else
+            }
+            else
             {
                 PI.Add(item[0]);
             }
@@ -26,7 +27,7 @@ public class StoneCollectible : BaseCollectible
         }
         else if (PI.IsFull())
         {
-            Debug.Log("Your inventory is full");
+            EM.InventoryFull();
         }
     }
 

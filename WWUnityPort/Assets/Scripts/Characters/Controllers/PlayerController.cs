@@ -134,7 +134,10 @@ public class PlayerController : BaseController
         }
     }
 
-
+    public bool GetGathering()
+    {
+        return animController.GetBool("Gathering");
+    }
 
     void MouseInteract()
     {
@@ -145,13 +148,25 @@ public class PlayerController : BaseController
 
             if (Physics.Raycast(ray, out hit))
             {
-                if(hit.collider.gameObject.GetComponent<IInteractable>() != null)
-                    hit.collider.gameObject.GetComponent<IInteractable>().OnInteract();
-
                 if (hit.collider.gameObject.tag == "Collectible")
-                    animController.SetBool("Gathering", true);
+                    StartCoroutine(GatheringNode(hit, animController.GetCurrentAnimatorStateInfo(0).length / 2));
+                else
+                {
+                    if (hit.collider.gameObject.GetComponent<IInteractable>() != null)
+                        hit.collider.gameObject.GetComponent<IInteractable>().OnInteract();
+                }
             }
 
         }
+    }
+
+    IEnumerator GatheringNode(RaycastHit hit, float time)
+    {
+        animController.SetBool("Gathering", true);
+
+        yield return new WaitForSeconds(time);
+
+        if (hit.collider.gameObject.GetComponent<IInteractable>() != null)
+            hit.collider.gameObject.GetComponent<IInteractable>().OnInteract();
     }
 }

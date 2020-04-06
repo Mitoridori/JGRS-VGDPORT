@@ -9,8 +9,8 @@ public class BaseCollectible : MonoBehaviour, IQuestID, IInteractable
 
     public List<Item> item;
     protected PlayerInventory PI;
-    Player player;
-    ErrorMessage EM;
+    protected Player player;
+    protected ErrorMessage EM;
 
     public string ID { get; set; }
 
