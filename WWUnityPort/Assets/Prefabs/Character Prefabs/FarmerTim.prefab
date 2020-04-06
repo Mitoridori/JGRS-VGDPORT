@@ -470,7 +470,8 @@ MonoBehaviour:
   CharacterName: Farmer Tim
   InteractiveTextBox: {fileID: 0}
   isSecondaryNPC: 0
-  QuestList: []
+  QuestList:
+  - {fileID: 11400000, guid: 7a190fc15722c7749a8b224f25c2eac3, type: 2}
   HasQuests: 0
 --- !u!1 &2198691643856602298
 GameObject:

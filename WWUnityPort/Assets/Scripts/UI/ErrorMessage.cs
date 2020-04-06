@@ -29,6 +29,11 @@ public class ErrorMessage : MonoBehaviour
         Message.text = "You do not have the coin to buy this item.";
     }
 
-
+    public void NotforSale()
+    {
+        ErrorBox.SetActive(true);
+        Title.text = "Inventory Error";
+        Message.text = "This item is not for sale.";
+    }
 
 }

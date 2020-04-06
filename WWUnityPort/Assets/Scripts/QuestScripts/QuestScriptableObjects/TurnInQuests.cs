@@ -23,16 +23,16 @@ public class TurnInQuests : Quests
             NPCHandIn.GetComponent<QuestNPC>().isSecondaryNPC = true;
             NPCHandIn.GetComponent<QuestNPC>().Quest = this;
         }
-        for (int i = 0; i < TurnOffShop.Count; i++)
-        {
-            GameObject NPC;
-            NPC = GameObject.Find(TurnOffShop[i]);
-            if (NPC)
-            {
-                NPC.GetComponent<ShopNPC>().enabled = false;
-                NPC.GetComponent<QuestNPC>().enabled = true;
-            }
-        }
+        //for (int i = 0; i < TurnOffShop.Count; i++)
+        //{
+        //    GameObject NPC;
+        //    NPC = GameObject.Find(TurnOffShop[i]);
+        //    if (NPC)
+        //    {
+        //        NPC.GetComponent<ShopNPC>().enabled = false;
+        //        NPC.GetComponent<QuestNPC>().enabled = true;
+        //    }
+        //}
 
     }
 

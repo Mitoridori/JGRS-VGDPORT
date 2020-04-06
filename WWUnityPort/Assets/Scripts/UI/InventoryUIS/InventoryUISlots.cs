@@ -91,6 +91,7 @@ public class InventoryUISlots : MonoBehaviour
     {
          if (item != null)
         {
+
             if (!PI.IsFull() && player.GetPlayerCoins() >= item.ItemCost)
             {
                 PI.Add(item);
@@ -112,10 +113,15 @@ public class InventoryUISlots : MonoBehaviour
     public void SelltoStore()
     {
         if (item !=null && transform.root.Find("PlayerHUD/ShopUI").gameObject.activeInHierarchy)
-        {
-            player.AddCoins(item.ItemCost);
-            PI.Remove(item);
-        }
+            if (item.ItemCost == 0)
+            {
+                EM.NotforSale();
+            }
+        else
+            {
+                player.AddCoins(item.ItemCost);
+                PI.Remove(item);
+            }
     }
 
 

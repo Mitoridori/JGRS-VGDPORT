@@ -686,7 +686,8 @@ MonoBehaviour:
   CharacterName: Tom
   InteractiveTextBox: {fileID: 0}
   isSecondaryNPC: 0
-  QuestList: []
+  QuestList:
+  - {fileID: 11400000, guid: 97ffacdc4c204f0439528de8d6daafd5, type: 2}
   HasQuests: 0
 --- !u!143 &5278150369265958249
 CharacterController:
