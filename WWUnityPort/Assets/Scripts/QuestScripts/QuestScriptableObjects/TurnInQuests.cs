@@ -7,7 +7,7 @@ public class TurnInQuests : Quests
 {
     public string StartNPC;
     public string NPCHandInName;
-    public List<string> CNPC = new List<string>();
+    public List<string> TurnOffShop = new List<string>();
 
     public override void Load()
     {
@@ -23,14 +23,15 @@ public class TurnInQuests : Quests
             NPCHandIn.GetComponent<QuestNPC>().isSecondaryNPC = true;
             NPCHandIn.GetComponent<QuestNPC>().Quest = this;
         }
-        for (int i = 0; i < CNPC.Count; i++)
+        for (int i = 0; i < TurnOffShop.Count; i++)
         {
-            //GameObject NPC;
-            //NPC = GameObject.Find(CNPC[i]);
-            //if (NPC)
-            //{
-            //    NPC.GetComponent<QuestNPC>().HasQuests = true;
-            //}
+            GameObject NPC;
+            NPC = GameObject.Find(TurnOffShop[i]);
+            if (NPC)
+            {
+                NPC.GetComponent<ShopNPC>().enabled = false;
+                NPC.GetComponent<QuestNPC>().enabled = true;
+            }
         }
 
     }
