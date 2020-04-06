@@ -21,7 +21,6 @@ MonoBehaviour:
   Description: Take NPC to the homestead
   NPCID: HomeStead
   QuestItems: []
-  TurnInNPCName: Doozy
   RequiredAmount: 1
   RewardItems:
   - {fileID: 11400000, guid: 3f26b6b82301a8443996db38f922c07e, type: 2}

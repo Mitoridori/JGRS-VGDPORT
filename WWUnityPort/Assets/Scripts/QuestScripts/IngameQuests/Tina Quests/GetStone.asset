@@ -24,7 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c198c3f3f017274693889cc0221e892, type: 2}
   - {fileID: 11400000, guid: 4fe4922b55d6076468d2690e6d76a945, type: 2}
   - {fileID: 11400000, guid: 5302cf4f4c095694fa6c38802468e27b, type: 2}
-  TurnInNPCName: TinyTina
   RequiredAmount: 10
   RewardItems: []
   ExperenceReward: 10

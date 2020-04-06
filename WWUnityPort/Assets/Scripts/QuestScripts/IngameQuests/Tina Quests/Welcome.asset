@@ -21,7 +21,6 @@ MonoBehaviour:
   Description: Welcome to Wonderland
   NPCID: Doozy
   QuestItems: []
-  TurnInNPCName: Doozy
   RequiredAmount: 1
   RewardItems: []
   ExperenceReward: 10
@@ -41,5 +40,4 @@ MonoBehaviour:
   RewardsList: ' 10'
   StartNPC: TinyTina
   NPCHandInName: Doozy
-  CNPC:
-  - Doozy
+  TurnOffShop: []
