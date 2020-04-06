@@ -12352,7 +12352,7 @@ PrefabInstance:
     - target: {fileID: 1077252067234805109, guid: 1a966bbe2c97cb04aaa633daa8281e88,
         type: 3}
       propertyPath: m_Name
-      value: MouseNPC
+      value: Mickey
       objectReference: {fileID: 0}
     - target: {fileID: 1077252067332432521, guid: 1a966bbe2c97cb04aaa633daa8281e88,
         type: 3}
