@@ -34,6 +34,7 @@ MonoBehaviour:
   SecondInprogressText: Did you get it?
   SecondCompletedText: 'Thanks for your help with the milk. '
   RewardsList: 
+  isPortalSwitch: 1
   StartNPC: FarmerTim
   NPCHandInName: Tom
   TurnOffShop: []

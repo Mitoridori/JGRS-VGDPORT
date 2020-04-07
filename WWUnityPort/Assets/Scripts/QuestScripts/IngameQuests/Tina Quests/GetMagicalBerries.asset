@@ -15,22 +15,27 @@ MonoBehaviour:
   QUIM: {fileID: 0}
   player: {fileID: 0}
   PI: {fileID: 0}
-  QuestName: 
-  Prereq1: 
-  Prereq2: 
-  Description: 
-  NPCID: 
-  QuestItems: []
-  RequiredAmount: 0
+  QuestName: GetMagicalBerries
+  Prereq1: NULL
+  Prereq2: NULL
+  Description: Go buy berries
+  NPCID: berry
+  QuestItems:
+  - {fileID: 11400000, guid: 819a1931bed36a24c965dc54c5f4d947, type: 2}
+  RequiredAmount: 5
   RewardItems: []
-  ExperenceReward: 0
-  CoinReward: 0
-  QuestObjectives: 
-  StartQuestText: 
-  TrackingQuestText: 
-  InprogressQuestText: 
-  CompletedQuestText: 
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Go buy berries from the shop keeper
+  StartQuestText: I'll work on putting the stones back into the arch, I just need
+    you to go to the shop keeper and buy some berries for me, 5 should be more then
+    enough.
+  TrackingQuestText: Buy Magical berries from Mickey
+  InprogressQuestText: 'Have you gotten them yet? I know they cost alot, if you don''t
+    have enough coin, try selling Mickey some wood or ore. '
+  CompletedQuestText: 'Great! Now to send you home. '
   SecondInprogressText: 
   SecondCompletedText: 
-  RewardsList: 
+  RewardsList: ' 10'
+  isPortalSwitch: 1
   CNPC: []

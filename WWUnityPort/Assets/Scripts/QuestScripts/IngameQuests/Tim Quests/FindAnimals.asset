@@ -15,22 +15,25 @@ MonoBehaviour:
   QUIM: {fileID: 0}
   player: {fileID: 0}
   PI: {fileID: 0}
-  QuestName: 
-  Prereq1: 
-  Prereq2: 
-  Description: 
-  NPCID: 
+  QuestName: FindAnimals
+  Prereq1: GototheFarm
+  Prereq2: NULL
+  Description: Find the missing animals
+  NPCID: Animal
   QuestItems: []
-  RequiredAmount: 0
-  RewardItems: []
-  ExperenceReward: 0
-  CoinReward: 0
-  QuestObjectives: 
-  StartQuestText: 
-  TrackingQuestText: 
-  InprogressQuestText: 
-  CompletedQuestText: 
+  RequiredAmount: 5
+  RewardItems:
+  - {fileID: 11400000, guid: 2380acd684aceb841be9d4eb546e09b9, type: 2}
+  ExperenceReward: 10
+  CoinReward: 10
+  QuestObjectives: Find the missing animals
+  StartQuestText: I can get you the milk your looking for, but first I need help finding
+    my lost animals.
+  TrackingQuestText: Find the missing animals
+  InprogressQuestText: Have you found them yet?
+  CompletedQuestText: 'Thank you for your help, let me get that milk for you. '
   SecondInprogressText: 
   SecondCompletedText: 
-  RewardsList: 
+  RewardsList: ' 10'
+  isPortalSwitch: 0
   CNPC: []

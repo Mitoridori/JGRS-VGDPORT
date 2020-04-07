@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b8cdfd55fc23b4b9f240c20542a855, type: 3}
   m_Name: Berry
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Berry
+  icon: {fileID: 21300000, guid: 40f7327f5c10dbb49a5068e139cf07b0, type: 3}
   showInInventory: 1
-  ItemCost: 0
-  details: 
-  ItemID: 
+  ItemCost: 20
+  details: Magical Berries
+  ItemID: berry

@@ -5,7 +5,6 @@ using UnityEngine;
 public class QuestNPC : InterNPC
 {
     //UI and Quests.cs to link to
-    QuestManager QM;
     PortalStageController Portal;
 
     public Quests Quest { get; set; }

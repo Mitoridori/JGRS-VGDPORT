@@ -36,5 +36,6 @@ MonoBehaviour:
   SecondInprogressText: 
   SecondCompletedText: 
   RewardsList: ' 10'
+  isPortalSwitch: 1
   CNPC:
   - Doozy

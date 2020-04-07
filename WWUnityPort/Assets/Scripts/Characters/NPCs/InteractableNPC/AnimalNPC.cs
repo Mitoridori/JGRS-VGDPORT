@@ -7,6 +7,11 @@ public class AnimalNPC : InterNPC, IEndPoint
 
     public string ItemID;
 
+    void awake()
+    {
+        ID = ItemID;
+    }
+
     public override void Interact()
     {
         if (executor)

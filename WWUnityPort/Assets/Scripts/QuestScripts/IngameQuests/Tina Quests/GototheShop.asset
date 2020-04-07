@@ -28,13 +28,14 @@ MonoBehaviour:
   QuestObjectives: 'Go buy grout from the Mickey the shop keeper. '
   StartQuestText: With this stone we can start repairing, we just need something to
     stick it together... grout! I bet we can get  some from the shop keeper's assistant,
-    Tom, his name is Mickey
+    Tom.
   TrackingQuestText: Go to the shop keeper's assistant, Tom
   InprogressQuestText: 'Did you find him yet? he''s located on the edge of town. '
   CompletedQuestText: Yes I can help you with that, but first I need some help myself.
   SecondInprogressText: Humm, Tiny Tina sent you?
   SecondCompletedText: Yes I can help you with that, but first I need some help myself.
   RewardsList: ' 10'
+  isPortalSwitch: 0
   StartNPC: TinyTina
   NPCHandInName: Tom
   TurnOffShop: []
