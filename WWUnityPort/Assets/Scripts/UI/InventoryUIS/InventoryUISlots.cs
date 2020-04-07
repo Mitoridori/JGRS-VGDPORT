@@ -4,8 +4,10 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class InventoryUISlots : MonoBehaviour
+public class InventoryUISlots : MonoBehaviour, IQuestID
 {
+    public string ID {get; set;}
+
     public Image icon;
     public Button removeButton;
 
@@ -16,16 +18,14 @@ public class InventoryUISlots : MonoBehaviour
     PlayerInventory PI;
     Player player;
     ErrorMessage EM;
-    Item Bitem;
-
-
+  
     private void Awake()
     {
         inventory = FindObjectOfType<Inventory>();
         PI = FindObjectOfType<PlayerInventory>();
         player = FindObjectOfType<Player>();
         EM = FindObjectOfType<ErrorMessage>();
-
+        //ID = item.ItemID;
     }
 
     // Add item to the slot
@@ -35,6 +35,7 @@ public class InventoryUISlots : MonoBehaviour
         icon.sprite = item.icon;
         icon.enabled = true;
         removeButton.interactable = true;
+        ID = item.ItemID;
     }
 
     // Clear the slot
@@ -81,11 +82,8 @@ public class InventoryUISlots : MonoBehaviour
 
             //Buy button
             transform.root.Find("PlayerHUD/ShopUI/ShopBackgroundImage/InfoBackgroundImage/BuyButton").GetComponent<Button>().onClick.AddListener(SellItem);
-
         }           
     }
-
-
 
     public void SellItem()
     {
@@ -94,8 +92,10 @@ public class InventoryUISlots : MonoBehaviour
 
             if (!PI.IsFull() && player.GetPlayerCoins() >= item.ItemCost)
             {
+               
                 PI.Add(item);
                 player.SubtractCoins(item.ItemCost);
+                Cleared();
             }
             else if (PI.IsFull())
             {
@@ -124,6 +124,9 @@ public class InventoryUISlots : MonoBehaviour
             }
     }
 
-
+    public void Cleared()
+    {
+        QuestEvents.ItemCleared(this);
+    }
 }
 
