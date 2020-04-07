@@ -12357,10 +12357,20 @@ PrefabInstance:
       propertyPath: m_TagString
       value: QuestNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3958312330324105824, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
     - target: {fileID: 4517804690031603274, guid: 9c8022e6771beda489cc7a22dfbe570a,
         type: 3}
       propertyPath: m_TagString
       value: QuestNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466977866703573991, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
       objectReference: {fileID: 0}
     - target: {fileID: 5923455076525486146, guid: 9c8022e6771beda489cc7a22dfbe570a,
         type: 3}
@@ -12422,10 +12432,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ranch
       objectReference: {fileID: 0}
+    - target: {fileID: 5923455077504927118, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923455077908586438, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934549475526931120, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229085269080789688, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
     - target: {fileID: 6487283755708466842, guid: 9c8022e6771beda489cc7a22dfbe570a,
         type: 3}
       propertyPath: m_TagString
       value: QuestNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551108578078519813, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750729519281966025, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: ItemID
+      value: Animal
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8064957374682589161, guid: 9c8022e6771beda489cc7a22dfbe570a, type: 3}

@@ -123,7 +123,8 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
 
     public bool ToggleIsActive()
     {
-        return isActive = !isActive;
+        isActive = !isActive;
+        return isActive;
     }
 
     public void Cleared()

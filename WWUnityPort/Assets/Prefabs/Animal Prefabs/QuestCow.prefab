@@ -33,8 +33,11 @@ MonoBehaviour:
   jumpSpeed: 0
   walkSpeed: 0
   runSpeed: 0
+  nameText: {fileID: 0}
+  CharacterName: 
   InteractiveTextBox: {fileID: 0}
-  ItemID: 
+  isSecondaryNPC: 0
+  ItemID: Animal
 --- !u!114 &526862656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422fb6956201c7944ae2113a1a53b0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTasksPerTick: 500
+  maxTasksPerTick: 100
   behavior: {fileID: 11400000, guid: 48112fc4cf6fe724fa3a34107e1722ce, type: 2}
   paused: 0
   restartWhenFinished: 0
@@ -121,7 +124,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 4.244789
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 16
   m_ObstacleAvoidanceType: 4
 --- !u!1001 &4389234120543800153
 PrefabInstance:
@@ -140,19 +143,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed7d62fecb799b94697ebbebaf6af9da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 307.21912
+      value: 28.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed7d62fecb799b94697ebbebaf6af9da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.0587034
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed7d62fecb799b94697ebbebaf6af9da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 248.22333
+      value: -20.02
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed7d62fecb799b94697ebbebaf6af9da, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed7d62fecb799b94697ebbebaf6af9da, type: 3}
       propertyPath: m_LocalRotation.y

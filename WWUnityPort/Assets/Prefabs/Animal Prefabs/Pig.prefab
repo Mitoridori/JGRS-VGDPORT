@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6662798037148554629}
   - component: {fileID: 7568515765772910755}
   - component: {fileID: 1624904385797030720}
+  - component: {fileID: 802472167124098073}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8819569578834534330}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -187,4 +188,22 @@ MonoBehaviour:
   CharacterName: 
   InteractiveTextBox: {fileID: 0}
   isSecondaryNPC: 0
-  ItemID: 
+  ItemID: Animal
+--- !u!143 &802472167124098073
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8819569578834534330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.189948
+  m_Radius: 0.547487
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}

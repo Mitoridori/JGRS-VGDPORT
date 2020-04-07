@@ -211,24 +211,6 @@ Transform:
   m_Father: {fileID: 2756786459117565611}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &5814588928774804706
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2825777062435098397}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2.189948
-  m_Radius: 0.547487
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &4364727199484322947
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,24 +243,6 @@ Transform:
   m_Father: {fileID: 119223003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &5505201043994139292
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4517804690031603274}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2.189948
-  m_Radius: 0.547487
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &5298649887167487874
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,24 +362,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &802472167124098073
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487283755708466842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2.189948
-  m_Radius: 0.547487
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &7879650599922096216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,11 +1288,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2628970721886613688}
     m_Modifications:
-    - target: {fileID: 1624904385797030720, guid: b8c983be44e18384197bd067db406673,
-        type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
     - target: {fileID: 7568515765772910755, guid: b8c983be44e18384197bd067db406673,
         type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
@@ -1417,12 +1358,6 @@ PrefabInstance:
 --- !u!4 &6487283755708701370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8819569578834232218, guid: b8c983be44e18384197bd067db406673,
-    type: 3}
-  m_PrefabInstance: {fileID: 2333447320800876832}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6487283755708466842 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
     type: 3}
   m_PrefabInstance: {fileID: 2333447320800876832}
   m_PrefabAsset: {fileID: 0}
@@ -2258,11 +2193,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2628970721886613688}
     m_Modifications:
-    - target: {fileID: 1624904385797030720, guid: b8c983be44e18384197bd067db406673,
-        type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
     - target: {fileID: 7568515765772910755, guid: b8c983be44e18384197bd067db406673,
         type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
@@ -2333,12 +2263,6 @@ PrefabInstance:
 --- !u!4 &4517804690031440490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8819569578834232218, guid: b8c983be44e18384197bd067db406673,
-    type: 3}
-  m_PrefabInstance: {fileID: 4960451794685358576}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4517804690031603274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
     type: 3}
   m_PrefabInstance: {fileID: 4960451794685358576}
   m_PrefabAsset: {fileID: 0}
@@ -2574,22 +2498,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7791631569570693131}
     m_Modifications:
-    - target: {fileID: 526862655, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
-    - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: maxTasksPerTick
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
       value: 
       objectReference: {fileID: 7879650599922096216}
-    - target: {fileID: 526862661, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: m_WalkableMask
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 4389234120543702521, guid: 0d82a4e9a63946046b0ef3a7880adf14,
         type: 3}
       propertyPath: m_Name
@@ -2728,22 +2640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7791631569570693131}
     m_Modifications:
-    - target: {fileID: 526862655, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
-    - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: maxTasksPerTick
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
       value: 
       objectReference: {fileID: 7879650599922096216}
-    - target: {fileID: 526862661, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: m_WalkableMask
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 4389234120543702521, guid: 0d82a4e9a63946046b0ef3a7880adf14,
         type: 3}
       propertyPath: m_Name
@@ -3129,11 +3029,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2628970721886613688}
     m_Modifications:
-    - target: {fileID: 1624904385797030720, guid: b8c983be44e18384197bd067db406673,
-        type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
     - target: {fileID: 7568515765772910755, guid: b8c983be44e18384197bd067db406673,
         type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
@@ -3201,12 +3096,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c983be44e18384197bd067db406673, type: 3}
---- !u!1 &2825777062435098397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
-    type: 3}
-  m_PrefabInstance: {fileID: 6724519148281532583}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2825777062435066685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8819569578834232218, guid: b8c983be44e18384197bd067db406673,
@@ -3445,22 +3334,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7791631569570693131}
     m_Modifications:
-    - target: {fileID: 526862655, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: ItemID
-      value: Animal
-      objectReference: {fileID: 0}
-    - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: maxTasksPerTick
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 526862656, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
       propertyPath: blackboard.objectParams.Array.data[0]
       value: 
       objectReference: {fileID: 7879650599922096216}
-    - target: {fileID: 526862661, guid: 0d82a4e9a63946046b0ef3a7880adf14, type: 3}
-      propertyPath: m_WalkableMask
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 4389234120543702521, guid: 0d82a4e9a63946046b0ef3a7880adf14,
         type: 3}
       propertyPath: m_Name
