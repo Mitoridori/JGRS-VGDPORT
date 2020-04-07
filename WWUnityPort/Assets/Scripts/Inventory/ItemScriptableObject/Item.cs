@@ -16,6 +16,7 @@ public class Item : ScriptableObject
 
     [TextArea(3, 10)]
     public string details;
+    public string ItemID;
 
 
     public virtual string GetDetails()
