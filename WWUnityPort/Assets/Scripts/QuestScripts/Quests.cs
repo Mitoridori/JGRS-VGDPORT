@@ -61,6 +61,10 @@ public class Quests : ScriptableObject
 
     public string RewardsList;
 
+    public bool isPortalSwitch;
+
+
+
     public virtual string Reward()
     {
         string coin;

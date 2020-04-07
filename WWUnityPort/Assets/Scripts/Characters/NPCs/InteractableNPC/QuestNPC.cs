@@ -6,6 +6,7 @@ public class QuestNPC : InterNPC
 {
     //UI and Quests.cs to link to
     QuestManager QM;
+    PortalStageController Portal;
     public Quests Quest { get; set; }
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
@@ -19,6 +20,7 @@ public class QuestNPC : InterNPC
     {
         QM = FindObjectOfType<QuestManager>();
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
+        Portal = FindObjectOfType<PortalStageController>();
         if(!HasQuests)
             questIndicator.SetActive(false);
         else
@@ -62,6 +64,9 @@ public class QuestNPC : InterNPC
             }
             else if (Quest.Completed)
             {
+                if (Quest.isPortalSwitch)
+                    Portal.SwitchPortalStage();
+
                 Quest.ChangeHasQuests();
                 Quest.SecondNPCCompletedText();
                 Quest.GiveReward();
@@ -110,6 +115,9 @@ public class QuestNPC : InterNPC
     {
         if (Quest.Completed&& !Quest.SecondNPC)
         {
+            if (Quest.isPortalSwitch)
+                Portal.SwitchPortalStage();
+
             Quest.GiveReward();
             Helped = true;
             AssignedQuest = false;
