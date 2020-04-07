@@ -21,7 +21,9 @@ public class QuestNPC : InterNPC
     {
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
         Portal = FindObjectOfType<PortalStageController>();
-        if(!HasQuests)
+        QM = FindObjectOfType<QuestManager>();
+
+        if (!HasQuests)
             questIndicator.SetActive(false);
         else
             questIndicator.SetActive(true);
