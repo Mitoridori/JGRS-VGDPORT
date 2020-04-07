@@ -7,6 +7,7 @@ public class QuestNPC : InterNPC
     //UI and Quests.cs to link to
     QuestManager QM;
     PortalStageController Portal;
+
     public Quests Quest { get; set; }
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
@@ -18,7 +19,6 @@ public class QuestNPC : InterNPC
     
     void Awake()
     {
-        QM = FindObjectOfType<QuestManager>();
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
         Portal = FindObjectOfType<PortalStageController>();
         if(!HasQuests)

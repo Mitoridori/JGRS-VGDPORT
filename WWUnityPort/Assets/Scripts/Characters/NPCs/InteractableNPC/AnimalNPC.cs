@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalNPC : InterNPC, IEndPoint, IQuestID
+public class AnimalNPC : InterNPC, IEndPoint
 {
-
-    public string ID { get; set; }
 
     public string ItemID;
 
     public override void Interact()
     {
         if (executor)
-            executor.enabled = true;
-    }
-
-    public void Cleared()
-    {
-        QuestEvents.ItemCleared(this);
+            for (int i = 0; i < QM.ActiveQuest.Count; i++)
+            {
+                if (QM.ActiveQuest[i].QuestName == "FindAnimals")
+                    executor.enabled = true;
+                else
+                    break;
+            }
     }
 
     public bool DidReach(bool condition)
