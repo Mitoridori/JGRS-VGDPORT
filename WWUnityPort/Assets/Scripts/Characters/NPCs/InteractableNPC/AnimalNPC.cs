@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalNPC : InterNPC, IEndPoint, IQuestID
+public class AnimalNPC : InterNPC, IEndPoint
 {
-    public string ID { get; set; }
 
     public string ItemID;
 
@@ -18,11 +17,6 @@ public class AnimalNPC : InterNPC, IEndPoint, IQuestID
                 else
                     break;
             }
-    }
-
-    public void Cleared()
-    {
-        QuestEvents.ItemCleared(this);
     }
 
     public bool DidReach(bool condition)

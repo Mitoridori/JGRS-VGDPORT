@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class QuestNPC : InterNPC
 {
-    //UI and Quests.cs to link to
-    protected QuestManager QM;
     public Quests Quest { get; set; }
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
@@ -17,7 +15,6 @@ public class QuestNPC : InterNPC
     
     void Awake()
     {
-        QM = FindObjectOfType<QuestManager>();
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
         if(!HasQuests)
             questIndicator.SetActive(false);
