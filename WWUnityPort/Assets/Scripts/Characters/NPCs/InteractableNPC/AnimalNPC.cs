@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AnimalNPC : InterNPC, IEndPoint, IQuestID
 {
-
     public string ID { get; set; }
 
     public string ItemID;
@@ -12,7 +11,13 @@ public class AnimalNPC : InterNPC, IEndPoint, IQuestID
     public override void Interact()
     {
         if (executor)
-            executor.enabled = true;
+            for (int i = 0; i < QM.ActiveQuest.Count; i++)
+            {
+                if (QM.ActiveQuest[i].QuestName == "FindAnimals")
+                    executor.enabled = true;
+                else
+                    break;
+            }
     }
 
     public void Cleared()

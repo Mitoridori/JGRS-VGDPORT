@@ -19,7 +19,7 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
     public bool isSecondaryNPC;
     public string ID { get; set; }
 
-
+    protected QuestManager QM;
     protected Player player;
 
     public bool CanMove { get; set; }
@@ -34,6 +34,8 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
         agent = GetComponent<NavMeshAgent>();
 
         player = FindObjectOfType<Player>();
+
+        QM = FindObjectOfType<QuestManager>();
 
         ID = gameObject.name;
 

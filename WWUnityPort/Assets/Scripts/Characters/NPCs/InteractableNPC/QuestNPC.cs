@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestNPC : InterNPC
 {
     //UI and Quests.cs to link to
-    QuestManager QM;
+    protected QuestManager QM;
     public Quests Quest { get; set; }
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
