@@ -47,9 +47,11 @@ public class QuestLogUIManager : MonoBehaviour
         {
             QG = QuestNPC[i];
 
-            if(QG && QG.HasQuests && QG.AssignedQuest)
+            if(QG && QG.HasQuests)
             {
+                if(QG.AssignedQuest)
                 QG.Quest.TrackingQuest();
+
                 break;
             }
             else 
@@ -83,7 +85,9 @@ public class QuestLogUIManager : MonoBehaviour
 
     public void QuitInteractiveBox()
     {
-        InteractiveBox.SetActive(QG.ToggleIsActive());
+        //InteractiveBox.SetActive(false);
+        //InteractiveBox.SetActive(QG.ToggleIsActive());
+        //QG.MenuToggle(QG.ToggleIsActive());
     }
 
 }

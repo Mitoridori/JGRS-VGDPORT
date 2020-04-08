@@ -2078,6 +2078,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
+    - target: {fileID: 3746343617150078434, guid: 2b0d310b246df5e43a9faebee701e017,
+        type: 3}
+      propertyPath: CloseButton
+      value: 
+      objectReference: {fileID: 1739786713}
     - target: {fileID: 3746343617331014431, guid: 2b0d310b246df5e43a9faebee701e017,
         type: 3}
       propertyPath: m_Name
@@ -4058,6 +4063,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 736750628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &737410677 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7070741226063042587, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509099960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &740010580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7926,6 +7943,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7125428495813648883, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9868,6 +9890,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1724987306}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1739786713 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5606565608846649874, guid: 56408a36f8d4e5c4f9cff2fa9f6f5a48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509099960}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1746323759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11928,6 +11962,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
+    - target: {fileID: 105903906979805964, guid: 67c8077200a09854a8370e149977dc1c,
+        type: 3}
+      propertyPath: CloseButton
+      value: 
+      objectReference: {fileID: 1739786713}
     - target: {fileID: 2198691643856602296, guid: 67c8077200a09854a8370e149977dc1c,
         type: 3}
       propertyPath: m_Name
@@ -12084,6 +12123,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1077252067332432521, guid: 1a966bbe2c97cb04aaa633daa8281e88,
+        type: 3}
+      propertyPath: CloseButton
+      value: 
+      objectReference: {fileID: 737410677}
     - target: {fileID: 1077252067332432535, guid: 1a966bbe2c97cb04aaa633daa8281e88,
         type: 3}
       propertyPath: items.Array.data[0]
@@ -12207,6 +12251,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: efd6c0dd330ee2a429b61a5afbbbc427,
         type: 2}
+    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: CloseButton
+      value: 
+      objectReference: {fileID: 1739786713}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12346,6 +12395,11 @@ PrefabInstance:
       propertyPath: InteractiveTextBox
       value: 
       objectReference: {fileID: 543943394}
+    - target: {fileID: 8266233497530806192, guid: 1f26b107321e32d4fbec67664e338963,
+        type: 3}
+      propertyPath: CloseButton
+      value: 
+      objectReference: {fileID: 1739786713}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f26b107321e32d4fbec67664e338963, type: 3}
 --- !u!1001 &5923455077868285693

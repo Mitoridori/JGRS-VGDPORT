@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
+using UnityEngine.UI;
 
 public class InterNPC : BaseCharacter, IInteractable, IQuestID
 {
@@ -21,7 +22,7 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
 
     protected QuestManager QM;
     protected Player player;
-
+    public Button CloseButton;
     public bool CanMove { get; set; }
 
     // Start is called before the first frame update
@@ -60,11 +61,19 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
         if (Vector3.Distance(transform.position, player.transform.position) <= 4)
         {
             Interact();
-            if(InteractiveTextBox)
-                MenuToggle(isActive);
-        }
+                if (InteractiveTextBox)
+                {
+                    MenuToggle(isActive);
+                    CloseButton.onClick.AddListener(CloseInteract);
+                }
+            }
     }
 
+    public void CloseInteract()
+    {
+        isActive = false;
+        MenuToggle(isActive);
+    }
     public virtual string GetCurrentText()
     {
         return currentText;
@@ -113,13 +122,13 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
         }
     }
 
-    public void CloseMenuToggle()
-    {
-        if (Vector3.Distance(transform.position, player.transform.position) >= 4)
-        {
-            InteractiveTextBox.SetActive(false);
-        }
-    }
+    //public void CloseMenuToggle()
+    //{
+    //    if (Vector3.Distance(transform.position, player.transform.position) >= 4)
+    //    {
+    //        InteractiveTextBox.SetActive(false);
+    //    }
+    //}
 
     public bool ToggleIsActive()
     {
