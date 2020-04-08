@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalStageController : MonoBehaviour
 {
@@ -29,6 +30,26 @@ public class PortalStageController : MonoBehaviour
                 portals[i + 1].SetActive(true);
                 return;
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (portals[portals.Length - 1].activeInHierarchy)
+            EnableTrigger();
+    }
+
+    void EnableTrigger()
+    {
+        gameObject.GetComponent<BoxCollider>().enabled = true;
+        gameObject.GetComponent<BoxCollider>().isTrigger = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.GetComponent<Player>())
+        {
+            SceneManager.LoadScene("WinScreen");
         }
     }
 }

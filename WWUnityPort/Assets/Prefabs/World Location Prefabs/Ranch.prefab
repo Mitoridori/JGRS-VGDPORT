@@ -82,8 +82,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.68066406, y: 1.4488878, z: 8.676971}
-  m_Center: {x: 6.1988525, y: -0.40903807, z: -3.6348877}
+  m_Size: {x: 1.0538025, y: 1.4488878, z: 8.676971}
+  m_Center: {x: 6.199066, y: -0.40903807, z: -3.6348877}
 --- !u!65 &4618340215924276498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.78622437, y: 1.3291411, z: 9.404678}
-  m_Center: {x: 6.055786, y: -0.4704492, z: 7.4957657}
+  m_Size: {x: 1.2845154, y: 1.3291411, z: 9.404678}
+  m_Center: {x: 6.0448914, y: -0.4704492, z: 7.4957657}
 --- !u!1 &249921563566418298
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,8 +145,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7724304, y: 1.5573997, z: 20.371033}
-  m_Center: {x: -16.987274, y: -0.5083251, z: 1.513382}
+  m_Size: {x: 1.0606842, y: 1.546936, z: 20.371033}
+  m_Center: {x: -17.013206, y: -0.51355696, z: 1.513382}
 --- !u!1 &576458268749322877
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,8 +293,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 23.318893, y: 1.6984692, z: 0.93977356}
-  m_Center: {x: -5.4840927, y: -0.34923458, z: 11.620033}
+  m_Size: {x: 23.318893, y: 1.6984692, z: 1.5128632}
+  m_Center: {x: -5.4840927, y: -0.34923458, z: 11.734398}
 --- !u!1 &5330563755042299395
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7879650599922096216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8356222755737558761}
@@ -414,8 +414,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.77178955, y: 3.0002055, z: 6.6935425}
-  m_Center: {x: 5.104492, y: 0.83088326, z: 1.5461731}
+  m_Size: {x: 0.77178955, y: 3.0002055, z: 18.175598}
+  m_Center: {x: 5.104492, y: 0.83088326, z: 1.9571838}
 --- !u!114 &1383654510532705696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,8 +569,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 23.629166, y: 1.4550714, z: 1.1109772}
-  m_Center: {x: -5.316719, y: -0.3590312, z: -8.02491}
+  m_Size: {x: 23.629166, y: 1.4550714, z: 1.4013214}
+  m_Center: {x: -5.316719, y: -0.3590312, z: -7.9372787}
 --- !u!1 &8519668049138714418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pig (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c983be44e18384197bd067db406673, type: 3}
@@ -2258,6 +2263,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pig
       objectReference: {fileID: 0}
+    - target: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c983be44e18384197bd067db406673, type: 3}
 --- !u!4 &4517804690031440490 stripped
@@ -2934,6 +2944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6183331705893743119, guid: 2120957a359bf8f40aae75d8bf2109b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2120957a359bf8f40aae75d8bf2109b6, type: 3}
 --- !u!4 &288227193111125562 stripped
@@ -3014,6 +3029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken
       objectReference: {fileID: 0}
+    - target: {fileID: 6183331705893743119, guid: 2120957a359bf8f40aae75d8bf2109b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2120957a359bf8f40aae75d8bf2109b6, type: 3}
 --- !u!4 &1110106094768799367 stripped
@@ -3093,6 +3113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pig (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819569578834534330, guid: b8c983be44e18384197bd067db406673,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestNPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c983be44e18384197bd067db406673, type: 3}
