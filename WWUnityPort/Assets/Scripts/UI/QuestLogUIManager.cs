@@ -13,6 +13,7 @@ public class QuestLogUIManager : MonoBehaviour
     public GameObject ToggleButtonB;
 
     public TextMeshProUGUI NPCBoxTwo;
+    public TextMeshProUGUI NPCButtonText;
     public GameObject InteractiveQuitButton;
     public GameObject InteractiveBox;
 

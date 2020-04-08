@@ -32,6 +32,7 @@ MonoBehaviour:
   InprogressQuestText: Don't forget to take the milk to Tom
   CompletedQuestText: 'Thanks for your help with the milk. '
   SecondInprogressText: Did you get it?
+  SecondInprogressButtonText: Yes
   SecondCompletedText: 'Thanks for your help with the milk. '
   RewardsList: ' 10'
   isPortalSwitch: 0

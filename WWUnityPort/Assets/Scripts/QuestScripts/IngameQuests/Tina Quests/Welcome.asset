@@ -35,9 +35,11 @@ MonoBehaviour:
     portal. '
   CompletedQuestText: 'You found him? then see if you can help to get the rune. '
   SecondInprogressText: Humm who are you, who sent you?
+  SecondInprogressButtonText: Tiny Tina
   SecondCompletedText: 'Ahh yes, the rune, I do have one of those, I''m not sure where
     I put it, maybe you can help me a little and I''ll remember. '
   RewardsList: ' 10'
+  isPortalSwitch: 0
   StartNPC: TinyTina
   NPCHandInName: Doozy
   TurnOffShop: []

@@ -33,6 +33,7 @@ MonoBehaviour:
   InprogressQuestText: 'Did you find him yet? he''s located on the edge of town. '
   CompletedQuestText: Yes I can help you with that, but first I need some help myself.
   SecondInprogressText: Humm, Tiny Tina sent you?
+  SecondInprogressButtonText: Yes
   SecondCompletedText: Yes I can help you with that, but first I need some help myself.
   RewardsList: ' 10'
   isPortalSwitch: 0

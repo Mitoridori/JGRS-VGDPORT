@@ -33,8 +33,10 @@ MonoBehaviour:
   InprogressQuestText: Have you found him? just follow this road out of town.
   CompletedQuestText: Yes, I have the milk delivery, but I need help first.
   SecondInprogressText: Humm who's there?
+  SecondInprogressButtonText: Its Me
   SecondCompletedText: Yes, I have the milk delivery, but I need help first.
   RewardsList: ' 10'
+  isPortalSwitch: 0
   StartNPC: Tom
   NPCHandInName: FarmerTim
   TurnOffShop: []

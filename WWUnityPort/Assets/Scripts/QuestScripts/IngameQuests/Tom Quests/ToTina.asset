@@ -32,8 +32,10 @@ MonoBehaviour:
   InprogressQuestText: Have you gotten back to Tiny Tina?
   CompletedQuestText: 'You have the grout! Wonderful onto the next thing. '
   SecondInprogressText: Did you get the grout?
+  SecondInprogressButtonText: Yes
   SecondCompletedText: 'You have the grout! Wonderful onto the next thing. '
   RewardsList: 
+  isPortalSwitch: 0
   StartNPC: Tom
   NPCHandInName: TinyTina
   TurnOffShop: []

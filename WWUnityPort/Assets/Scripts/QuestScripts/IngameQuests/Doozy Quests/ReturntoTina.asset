@@ -34,9 +34,11 @@ MonoBehaviour:
   CompletedQuestText: Oh good, I'm glad to see you've gotten the rune, now for the
     next thing on the list.
   SecondInprogressText: Did you get it? did you get the rune?
+  SecondInprogressButtonText: I did
   SecondCompletedText: Oh good, I'm glad to see you've gotten the rune, now for the
     next thing on the list.
   RewardsList: ' 10'
+  isPortalSwitch: 0
   StartNPC: Doozy
   NPCHandInName: TinyTina
   TurnOffShop: []

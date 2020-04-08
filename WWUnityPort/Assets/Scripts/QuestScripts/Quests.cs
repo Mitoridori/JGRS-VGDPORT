@@ -56,6 +56,7 @@ public class Quests : ScriptableObject
 
     [TextArea(3, 10)]
     public string SecondInprogressText;
+    public string SecondInprogressButtonText;
     [TextArea(3, 10)]
     public string SecondCompletedText;
 
@@ -87,6 +88,7 @@ public class Quests : ScriptableObject
         if (QUIM)
         {
             QUIM.NPCBoxTwo.text = StartQuestText;
+            QUIM.NPCButtonText.text = "Close";
         }
         Debug.Log("StartText " + QuestName);
     }
@@ -114,6 +116,7 @@ public class Quests : ScriptableObject
         if (QUIM)
         {
             QUIM.NPCBoxTwo.text = InprogressQuestText;
+            QUIM.NPCButtonText.text = "Close";
         }
         Debug.Log("In Progress " + QuestName);
     }
@@ -123,6 +126,7 @@ public class Quests : ScriptableObject
         if (QUIM)
         {
             QUIM.NPCBoxTwo.text = CompletedQuestText;
+            QUIM.NPCButtonText.text = "Close";
         }
         Debug.Log("Completed Text" + QuestName);
     }
@@ -133,6 +137,7 @@ public class Quests : ScriptableObject
         if (QUIM)
         {
             QUIM.NPCBoxTwo.text = SecondInprogressText;
+            QUIM.NPCButtonText.text = SecondInprogressButtonText;
         }
 
     }
@@ -143,6 +148,7 @@ public class Quests : ScriptableObject
         if (QUIM)
         {
             QUIM.NPCBoxTwo.text = SecondCompletedText;
+            QUIM.NPCButtonText.text = "Close";
         }
     }
 
