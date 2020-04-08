@@ -12084,6 +12084,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1077252067332432535, guid: 1a966bbe2c97cb04aaa633daa8281e88,
+        type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 819a1931bed36a24c965dc54c5f4d947,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a966bbe2c97cb04aaa633daa8281e88, type: 3}
 --- !u!1001 &3330929469070372829
@@ -12165,7 +12171,7 @@ PrefabInstance:
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: QuestList.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
@@ -12187,13 +12193,20 @@ PrefabInstance:
         type: 3}
       propertyPath: QuestList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 9c42067a9e5a763458e32cf54341d20b,
+      objectReference: {fileID: 11400000, guid: 098cd11c590ea2a4e83a1f561c0e7727,
         type: 2}
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: QuestList.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 9d2511b469d998f4f944b38f25abf3ae,
+        type: 2}
+    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: QuestList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: efd6c0dd330ee2a429b61a5afbbbc427,
+        type: 2}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12342,6 +12355,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 250335274}
     m_Modifications:
+    - target: {fileID: 251067974294203549, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 13.87117
+      objectReference: {fileID: 0}
+    - target: {fileID: 251067974294203549, guid: 9c8022e6771beda489cc7a22dfbe570a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -1.445198
+      objectReference: {fileID: 0}
     - target: {fileID: 288227193110692378, guid: 9c8022e6771beda489cc7a22dfbe570a,
         type: 3}
       propertyPath: m_TagString

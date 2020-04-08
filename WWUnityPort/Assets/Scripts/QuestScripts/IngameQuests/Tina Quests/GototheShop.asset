@@ -16,7 +16,7 @@ MonoBehaviour:
   player: {fileID: 0}
   PI: {fileID: 0}
   QuestName: GototheShop
-  Prereq1: NULL
+  Prereq1: GetStone
   Prereq2: NULL
   Description: Go to the shop keeper
   NPCID: Tom

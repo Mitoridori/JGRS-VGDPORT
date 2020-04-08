@@ -16,7 +16,7 @@ MonoBehaviour:
   player: {fileID: 0}
   PI: {fileID: 0}
   QuestName: GetStone
-  Prereq1: ReturntoTIna
+  Prereq1: ReturntoTina
   Prereq2: NULL
   Description: Gather 10 peices of stone
   NPCID: ore
@@ -37,4 +37,5 @@ MonoBehaviour:
   SecondInprogressText: 
   SecondCompletedText: 
   RewardsList: ' 10'
+  isPortalSwitch: 0
   CNPC: []

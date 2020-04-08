@@ -16,7 +16,7 @@ MonoBehaviour:
   player: {fileID: 0}
   PI: {fileID: 0}
   QuestName: GetMagicalBerries
-  Prereq1: NULL
+  Prereq1: ToTina
   Prereq2: NULL
   Description: Go buy berries
   NPCID: berry

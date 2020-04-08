@@ -7,13 +7,10 @@ public class AnimalNPC : InterNPC, IEndPoint
 
     public string ItemID;
 
-    void awake()
-    {
-        ID = ItemID;
-    }
-
     public override void Interact()
     {
+        ID = ItemID;
+
         if (executor)
             for (int i = 0; i < QM.ActiveQuest.Count; i++)
             {

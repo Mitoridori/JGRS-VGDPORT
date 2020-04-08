@@ -33,8 +33,8 @@ MonoBehaviour:
   CompletedQuestText: 'Thanks for your help with the milk. '
   SecondInprogressText: Did you get it?
   SecondCompletedText: 'Thanks for your help with the milk. '
-  RewardsList: 
-  isPortalSwitch: 1
+  RewardsList: ' 10'
+  isPortalSwitch: 0
   StartNPC: FarmerTim
   NPCHandInName: Tom
   TurnOffShop: []
