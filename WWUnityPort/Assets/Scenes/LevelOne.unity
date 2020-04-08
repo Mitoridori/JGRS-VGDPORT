@@ -12232,7 +12232,7 @@ PrefabInstance:
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: QuestList.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
@@ -12273,6 +12273,12 @@ PrefabInstance:
       propertyPath: CloseButton
       value: 
       objectReference: {fileID: 1739786713}
+    - target: {fileID: 3351068816835721012, guid: bcce5ccf0f2488b4c99b71c640e74232,
+        type: 3}
+      propertyPath: QuestList.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: df76839192415dd46abae34b000332ab,
+        type: 2}
     - target: {fileID: 3351068817465526058, guid: bcce5ccf0f2488b4c99b71c640e74232,
         type: 3}
       propertyPath: m_LocalPosition.x
