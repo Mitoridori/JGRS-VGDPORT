@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuController : BaseMenuController
+public class WinScreenController : BaseMenuController
 {
-    
-    public void PlayGame()
+   public void LoadMainMenu()
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene("MainMenu");
     }
-
 }
