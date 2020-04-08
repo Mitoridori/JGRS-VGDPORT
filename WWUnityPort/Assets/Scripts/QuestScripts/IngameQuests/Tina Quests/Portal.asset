@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbd7c2b5f87c19409f654ed3f253515, type: 3}
+  m_Name: Portal
+  m_EditorClassIdentifier: 
+  QUIM: {fileID: 0}
+  player: {fileID: 0}
+  PI: {fileID: 0}
+  QuestName: Portal
+  Prereq1: GetMagicalBerries
+  Prereq2: NULL
+  Description: Pick a portal
+  NPCID: portal
+  QuestItems: []
+  RequiredAmount: 1
+  RewardItems: []
+  ExperenceReward: 0
+  CoinReward: 0
+  QuestObjectives: Go through the portal to return home.
+  StartQuestText: 'Now everything is together, you can return home, just walk through
+    the portal. '
+  TrackingQuestText: Return home through the portal.
+  InprogressQuestText: 'Go home, walk through the portal. '
+  CompletedQuestText: 
+  SecondInprogressText: 
+  SecondInprogressButtonText: 
+  SecondCompletedText: 
+  RewardsList: 
+  isPortalSwitch: 0
+  CNPC: []
