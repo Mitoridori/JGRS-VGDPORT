@@ -17,3 +17,4 @@ MonoBehaviour:
   showInInventory: 1
   ItemCost: 70
   details: A red ore, more rare and commonly used to reinforce other metals.
+  ItemID: ore

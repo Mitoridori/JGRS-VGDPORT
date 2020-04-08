@@ -17,3 +17,4 @@ MonoBehaviour:
   showInInventory: 1
   ItemCost: 30
   details: A blue ore that is fairly common, used in construction.
+  ItemID: ore

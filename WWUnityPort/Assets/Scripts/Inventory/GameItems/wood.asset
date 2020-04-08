@@ -17,3 +17,4 @@ MonoBehaviour:
   showInInventory: 1
   ItemCost: 5
   details: A stack of wood
+  ItemID: wood

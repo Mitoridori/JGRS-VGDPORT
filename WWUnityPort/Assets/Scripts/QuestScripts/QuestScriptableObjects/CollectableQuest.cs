@@ -23,7 +23,25 @@ public class CollectableQuest : Quests
                 //NPC.GetComponent<ConversationNpc>().hasBeenTalkedTo = false;
             }
         }
+        CheckItems();
 
     }
+
+    public void CheckItems()
+    {
+        PlayerInventory PI;
+        PI = FindObjectOfType<PlayerInventory>();
+        Item item;
+
+        for (int i = 0; i < PI.items.Count; i++)
+        {
+            item = PI.items[i];
+            if (item.ItemID == NPCID)
+            {
+                //something to add to collected count.
+            }
+        }
+    }
+
 }
 

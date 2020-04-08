@@ -18,3 +18,4 @@ MonoBehaviour:
   ItemCost: 20
   details: A sandy rock, commonly used to build foundations for structures and reinforce
     the bottoms of buildings.
+  ItemID: ore
