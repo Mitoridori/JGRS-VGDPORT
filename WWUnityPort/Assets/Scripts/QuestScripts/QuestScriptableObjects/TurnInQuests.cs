@@ -33,7 +33,7 @@ public class TurnInQuests : Quests
         //        NPC.GetComponent<QuestNPC>().enabled = true;
         //    }
         //}
-
+        ChangeHasQuests();
     }
 
     public override void ChangeHasQuests()

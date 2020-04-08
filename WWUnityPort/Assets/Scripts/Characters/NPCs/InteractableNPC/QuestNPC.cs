@@ -13,6 +13,7 @@ public class QuestNPC : InterNPC
     public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
     private int i = 0; //quest counter
     public bool HasQuests;
+    public bool NoQuests;
 
     GameObject questIndicator;
     
@@ -21,6 +22,7 @@ public class QuestNPC : InterNPC
         questIndicator = GetComponentInChildren<ToggleColor>().gameObject;
         Portal = FindObjectOfType<PortalStageController>();
         QM = FindObjectOfType<QuestManager>();
+        NoQuests = false;
 
         if (!HasQuests)
             questIndicator.SetActive(false);
@@ -33,10 +35,22 @@ public class QuestNPC : InterNPC
         Follow();
         CloseMenuToggle();
         LookAt();
+        CheckIndicator();
+    }
+
+    public void CheckIndicator()
+    {
         if (HasQuests)
             questIndicator.SetActive(true);
-        if (!AssignedQuest && !Helped && questIndicator.activeInHierarchy)
+        else if (!HasQuests)
+            questIndicator.SetActive(false);
+
+        if (!AssignedQuest && !NoQuests && questIndicator.activeInHierarchy)
             questIndicator.GetComponent<ToggleColor>().SetIconMaterialAvailable();
+        if (HasQuests && isSecondaryNPC)
+            questIndicator.GetComponent<ToggleColor>().SetIconMaterialTaken();
+
+
     }
 
     public override void Interact()
@@ -70,7 +84,7 @@ public class QuestNPC : InterNPC
                 if (Quest.isPortalSwitch)
                     Portal.SwitchPortalStage();
 
-                Quest.ChangeHasQuests();
+                
                 Quest.SecondNPCCompletedText();
                 Quest.GiveReward();
                 QM.addToCQNList(Quest.QuestName);
@@ -161,6 +175,7 @@ public class QuestNPC : InterNPC
     //DESCRIPTION : Calls the dialog if no more quests are to be found
     void NoMoreQuest()
     {
+        NoQuests = true;
         currentText = "Thanks for you Help";
         questIndicator.SetActive(false);
         Debug.Log("No Quest Got");
