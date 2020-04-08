@@ -31,6 +31,8 @@ public class QuestNPC : InterNPC
     public override void Update()
     {
         Follow();
+        CloseMenuToggle();
+        LookAt();
         if (HasQuests)
             questIndicator.SetActive(true);
         if (!AssignedQuest && !Helped && questIndicator.activeInHierarchy)

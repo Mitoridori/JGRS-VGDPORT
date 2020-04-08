@@ -11,7 +11,8 @@ public class ShopNPC : InterNPC
 
     public override void Update()
     {
-        
+        CloseMenuToggle();
+        LookAt();
     }
     public override void Interact()
     {

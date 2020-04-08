@@ -25,6 +25,9 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
     public Button CloseButton;
     public bool CanMove { get; set; }
 
+    protected Transform startTransform;
+    private Quaternion startRotation;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +43,20 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
 
         ID = gameObject.name;
 
+        GetStartRotation();
+
         if (executor)
             executor.enabled = false;
+    }
+
+    
+
+    public Quaternion GetStartRotation()
+    {
+        startTransform = gameObject.transform;
+        startRotation = startTransform.rotation;
+
+        return startRotation;
     }
 
     public virtual void Update()
@@ -122,13 +137,14 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
         }
     }
 
-    //public void CloseMenuToggle()
-    //{
-    //    if (Vector3.Distance(transform.position, player.transform.position) >= 4)
-    //    {
-    //        InteractiveTextBox.SetActive(false);
-    //    }
-    //}
+    public void CloseMenuToggle()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) >= 4 && isActive)
+        {
+            isActive = false;
+            MenuToggle(isActive);
+        }
+    }
 
     public bool ToggleIsActive()
     {
@@ -139,5 +155,25 @@ public class InterNPC : BaseCharacter, IInteractable, IQuestID
     public void Cleared()
     {
         QuestEvents.ItemCleared(this);
+    }
+    public void LookAt()
+    {
+        if (player)
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) <= 4)
+            {
+                transform.LookAt(player.transform);
+            }
+            else
+            {
+                ResetPosition();
+            }
+        }
+    }
+    public void ResetPosition()
+    {
+        //Debug.Log("Return to oringinal position");
+
+        transform.rotation = startRotation;
     }
 }
