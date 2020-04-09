@@ -162,14 +162,14 @@ public class PlayerController : BaseController
 
     IEnumerator GatheringNode(RaycastHit hit, float time)
     {
-        //if ((transform.position - hit.transform.position).magnitude <= 3)
-        //{
+        if ((transform.position - hit.transform.position).magnitude <= 3)
+        {
             animController.SetBool("Gathering", true);
 
             yield return new WaitForSeconds(time);
 
             if (hit.collider.gameObject.GetComponent<IInteractable>() != null)
                 hit.collider.gameObject.GetComponent<IInteractable>().OnInteract();
-        //}
+        }
     }
 }

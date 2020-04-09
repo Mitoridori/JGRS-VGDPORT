@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3339178}
   - component: {fileID: 2368204}
   - component: {fileID: 9588226}
+  - component: {fileID: 5075973027462674166}
   m_Layer: 0
   m_Name: 2K_Sandstone_Boulder3
   m_TagString: Boulder
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &5075973027462674166
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3967804
+  m_Center: {x: 0, y: 0, z: 0}

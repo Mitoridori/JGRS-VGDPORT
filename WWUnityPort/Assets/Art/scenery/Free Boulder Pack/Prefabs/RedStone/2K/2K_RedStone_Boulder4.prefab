@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3353456}
   - component: {fileID: 2305982}
   - component: {fileID: 9586574}
+  - component: {fileID: 2396892689491934867}
   m_Layer: 0
   m_Name: 2K_RedStone_Boulder4
   m_TagString: Boulder
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &2396892689491934867
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3967804
+  m_Center: {x: 0, y: 0, z: 0}

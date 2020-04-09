@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3314236}
   - component: {fileID: 2341028}
   - component: {fileID: 9556826}
+  - component: {fileID: 4935159296810407475}
   m_Layer: 0
   m_Name: 2K_BlueStone_Boulder2 1
   m_TagString: Boulder
@@ -97,3 +98,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &4935159296810407475
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3806236
+  m_Center: {x: 0.014641419, y: 0.027341455, z: -0.0026054382}
