@@ -9780,6 +9780,9 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: 804cec142d03b6e4eade9044b50608be, type: 2}
   - {fileID: 11400000, guid: 804cec142d03b6e4eade9044b50608be, type: 2}
+  - {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}
+  - {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}
+  - {fileID: 11400000, guid: 1d4c170dacc7e2140aa36d42e1855de9, type: 2}
 --- !u!1001 &1672249699
 PrefabInstance:
   m_ObjectHideFlags: 0

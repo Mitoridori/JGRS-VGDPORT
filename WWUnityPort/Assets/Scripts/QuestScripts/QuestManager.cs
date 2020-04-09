@@ -5,32 +5,32 @@ using UnityEngine;
 
 //NAME : QuestManager
 //PURPOSE :Checks to see what Quests have been done and what quests can be unlocked because of the completed quests. 
-public class QuestManager : MonoBehaviour
+public class QuestManager : MonoBehaviour, IQuestID
 {
     public Quests TrackingQuest { get; set; }
     public List<string> completedQuestNames;
     private bool isMatch = false;
     private bool checklist;
-
     public List<Quests> ActiveQuest = new List<Quests>();
-    //public List<GameObject> QuestNPC = new List<GameObject>();
-
-    //private List<GameObject> NPC = new List<GameObject>();
+    
+    
+    public string ID { get; set; }
+    PlayerInventory PI;
+    Item item;
+    public Quests quest { get; set; }
 
 
 
     //FUNCTION : searchCGNList()
     //DESCRIPTION : Searchs the completed Quest Names list.
-    //PARAMETERS : 
-    //RETURNS : None()
     public void Awake()
     {
         addToCQNList("NULL");
+        PI = FindObjectOfType<PlayerInventory>();
     }
 
     //Function : SearchCQNList() 
     //DESCRIPTION : Function to check if a string matches the quest name searched for
-    //PARAMETERS : String name
     //RETURNS : isMatch
     public bool searchCQNList(string name)
     {
@@ -84,9 +84,42 @@ public class QuestManager : MonoBehaviour
     {
         for (int i = 0; i < ActiveQuest.Count; i++)
         {
+            quest = ActiveQuest[i];
             Debug.Log(ActiveQuest[i]);
         }
 
     }
+
+
+
+
+    public void CheckItems()
+    {
+        listActiveQuest();
+        for (int i = 0; i < PI.items.Count; i++)
+        {
+            item = PI.items[i];
+            if (item.ItemID == quest.NPCID)
+            {
+                ID = item.ItemID;
+                Cleared();
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    public void Cleared()
+    {
+        QuestEvents.ItemCleared(this);
+    }
+
 }
 

@@ -119,6 +119,7 @@ public class QuestNPC : InterNPC
                     QM.AddActiveQuests(Quest);
                     if (questIndicator)
                         questIndicator.GetComponent<ToggleColor>().SetIconMaterialTaken();
+                    QM.CheckItems();
                     return;
                 }
             }
