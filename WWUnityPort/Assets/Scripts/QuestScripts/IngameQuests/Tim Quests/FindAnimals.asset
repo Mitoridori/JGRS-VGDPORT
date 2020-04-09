@@ -33,6 +33,7 @@ MonoBehaviour:
   InprogressQuestText: Have you found them yet?
   CompletedQuestText: 'Thank you for your help, let me get that milk for you. '
   SecondInprogressText: 
+  SecondInprogressButtonText: 
   SecondCompletedText: 
   RewardsList: ' 10'
   isPortalSwitch: 0

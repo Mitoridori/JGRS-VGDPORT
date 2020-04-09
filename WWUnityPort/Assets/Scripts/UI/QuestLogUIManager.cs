@@ -50,10 +50,12 @@ public class QuestLogUIManager : MonoBehaviour
 
             if(QG && QG.HasQuests)
             {
-                if(QG.AssignedQuest)
-                QG.Quest.TrackingQuest();
+                if (QG.AssignedQuest)
+                {
+                    QG.Quest.TrackingQuest();
 
-                break;
+                    break;
+                }
             }
             else 
                 NoQuestFound();

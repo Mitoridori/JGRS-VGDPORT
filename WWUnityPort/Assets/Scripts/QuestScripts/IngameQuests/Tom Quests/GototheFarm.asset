@@ -22,8 +22,7 @@ MonoBehaviour:
   NPCID: FarmerTim
   QuestItems: []
   RequiredAmount: 1
-  RewardItems:
-  - {fileID: 11400000, guid: 2380acd684aceb841be9d4eb546e09b9, type: 2}
+  RewardItems: []
   ExperenceReward: 10
   CoinReward: 10
   QuestObjectives: Find Farmer Tim

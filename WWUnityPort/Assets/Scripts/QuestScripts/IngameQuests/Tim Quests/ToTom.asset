@@ -23,7 +23,8 @@ MonoBehaviour:
   QuestItems:
   - {fileID: 11400000, guid: 2380acd684aceb841be9d4eb546e09b9, type: 2}
   RequiredAmount: 1
-  RewardItems: []
+  RewardItems:
+  - {fileID: 11400000, guid: 6f161842303e3504797ea79b0c4fccd8, type: 2}
   ExperenceReward: 10
   CoinReward: 10
   QuestObjectives: Return to Tom with the milk

@@ -84,7 +84,7 @@ public class QuestNPC : InterNPC
                 if (Quest.isPortalSwitch)
                     Portal.SwitchPortalStage();
 
-                
+                Quest.ChangeHasQuests();
                 Quest.SecondNPCCompletedText();
                 Quest.GiveReward();
                 QM.addToCQNList(Quest.QuestName);
